@@ -14,7 +14,7 @@ export default function HomePage() {
     <div className="space-y-20">
       <section className="pt-6">
         <h1 className="text-5xl leading-[1.1] font-normal">Shivansh Bansal</h1>
-        <p className="font-mono text-xs tracking-widest text-[#444444] mt-4 uppercase">
+        <p className="font-mono text-xs tracking-widest text-[#666666] mt-4 uppercase">
           [Role] — [City]
         </p>
         <p className="text-lg leading-[1.8] mt-8 max-w-lg">
@@ -26,7 +26,7 @@ export default function HomePage() {
       </section>
 
       <section>
-        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#444444] mb-6">
+        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#777777] mb-6">
           / writing
         </h2>
         <ul className="space-y-5">
@@ -39,7 +39,7 @@ export default function HomePage() {
                 <span className="text-[1.0625rem] group-hover:underline underline-offset-[3px] leading-snug">
                   {post.title}
                 </span>
-                <span className="font-mono text-xs text-[#3a3a3a] ml-6 shrink-0">
+                <span className="font-mono text-xs text-[#666666] ml-6 shrink-0">
                   {fmtDate(post.date)}
                 </span>
               </Link>
@@ -48,32 +48,32 @@ export default function HomePage() {
         </ul>
         <Link
           href="/writing"
-          className="font-mono text-[0.65rem] tracking-widest text-[#3a3a3a] hover:text-[#efefef] transition-colors mt-7 inline-block"
+          className="font-mono text-[0.65rem] tracking-widest text-[#666666] hover:text-[#efefef] transition-colors mt-7 inline-block"
         >
           all writing →
         </Link>
       </section>
 
       <section>
-        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#444444] mb-6">
+        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#777777] mb-6">
           / projects
         </h2>
-        <p className="text-[1.0625rem] leading-[1.8] text-[#888888] max-w-lg">
+        <p className="text-[1.0625rem] leading-[1.8] text-[#999999] max-w-lg">
           [Brief 1–2 sentence teaser about what you&apos;re building. Something that gives a sense of your interests and what you care about making.]
         </p>
         <Link
           href="/projects"
-          className="font-mono text-[0.65rem] tracking-widest text-[#3a3a3a] hover:text-[#efefef] transition-colors mt-5 inline-block"
+          className="font-mono text-[0.65rem] tracking-widest text-[#666666] hover:text-[#efefef] transition-colors mt-5 inline-block"
         >
           all projects →
         </Link>
       </section>
 
       <section>
-        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#444444] mb-4">
+        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#777777] mb-4">
           / subscribe
         </h2>
-        <p className="font-mono text-xs text-[#444444] mb-4">
+        <p className="font-mono text-xs text-[#666666] mb-4">
           New essays, occasionally.
         </p>
         <form className="flex gap-0 max-w-sm">
@@ -84,7 +84,7 @@ export default function HomePage() {
           />
           <button
             type="submit"
-            className="font-mono text-xs tracking-widest uppercase text-[#444444] hover:text-[#efefef] transition-colors ml-6 shrink-0"
+            className="font-mono text-xs tracking-widest uppercase text-[#666666] hover:text-[#efefef] transition-colors ml-6 shrink-0"
           >
             Subscribe →
           </button>
