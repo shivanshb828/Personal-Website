@@ -7,13 +7,13 @@ export const metadata: Metadata = {
 const socials = [
   {
     label: 'Email',
-    display: '[your-email@domain.com]',
-    href: 'mailto:[your-email@domain.com]',
+    display: '[shivanshb@ucla.edu]',
+    href: 'mailto:[shivanshb@ucla.edu]',
   },
   {
     label: 'GitHub',
-    display: '[your-github]',
-    href: 'https://github.com/[your-github]',
+    display: '[shivanshb828]',
+    href: 'https://github.com/shivanshb828',
     external: true,
   },
   {
@@ -24,8 +24,8 @@ const socials = [
   },
   {
     label: 'LinkedIn',
-    display: '[your-linkedin]',
-    href: 'https://linkedin.com/in/[your-linkedin]',
+    display: '[LinkedIn]',
+    href: 'https://linkedin.com/in/shivansh~bansal',
     external: true,
   },
 ]
