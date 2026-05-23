@@ -25,25 +25,13 @@ const projects = [
     ],
   },
   {
-    name: '[Project Name 2]',
-    description: '[A short description of what this project does and why you built it.]',
-    year: '2024',
-    links: [{ label: 'GitHub', href: 'https://github.com/[your-github]/[repo]' }],
-  },
-  {
-    name: '[Project Name 3]',
-    description: '[A short description of what this project does and why you built it.]',
-    year: '2023',
+    name: 'Global Education Inequality Monitoring System',
+    description: 'GEIMS is an AI-powered, real-time monitoring platform that tracks and visualizes global education inequality across countries and regions',
+    year: '2025',
     links: [
-      { label: 'GitHub', href: 'https://github.com/[your-github]/[repo]' },
-      { label: 'Demo', href: 'https://[demo-url].com' },
+      { label: 'GitHub', href: 'http://github.com/shivanshb828/geims' },
+      { label: 'Live', href: 'https://unesco-geims.org/' },
     ],
-  },
-  {
-    name: '[Project Name 4]',
-    description: '[A short description of what this project does and why you built it.]',
-    year: '2023',
-    links: [{ label: 'GitHub', href: 'https://github.com/[your-github]/[repo]' }],
   },
 ]
 
