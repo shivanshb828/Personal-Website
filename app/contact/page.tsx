@@ -33,7 +33,7 @@ const socials = [
 export default function ContactPage() {
   return (
     <div className="space-y-10">
-      <h1 className="font-mono text-xs tracking-widest uppercase text-[#999999]">
+      <h1 className="font-mono text-xs tracking-widest uppercase text-[#555555]">
         Contact
       </h1>
 
@@ -41,15 +41,15 @@ export default function ContactPage() {
         [A short, welcoming line about how you like to hear from people — what kind of conversations you enjoy, what you&apos;re open to connecting about.]
       </p>
 
-      <div className="space-y-4 border-t border-[#f0f0f0] pt-8">
+      <div className="space-y-4 border-t border-[#1f1f1f] pt-8">
         {socials.map((social) => (
           <div key={social.label} className="flex items-center gap-0">
-            <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#aaaaaa] w-24 shrink-0">
+            <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#444444] w-24 shrink-0">
               {social.label}
             </span>
             <a
               href={social.href}
-              className="text-[0.9375rem] hover:underline underline-offset-[3px] text-[#333333]"
+              className="text-[0.9375rem] hover:underline underline-offset-[3px] text-[#aaaaaa] hover:text-[#efefef] transition-colors"
               {...(social.external
                 ? { target: '_blank', rel: 'noopener noreferrer' }
                 : {})}

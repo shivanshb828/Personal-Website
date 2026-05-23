@@ -11,27 +11,27 @@ export default function WritingPage() {
 
   return (
     <div>
-      <h1 className="font-mono text-xs tracking-widest uppercase text-[#999999] mb-12">
+      <h1 className="font-mono text-xs tracking-widest uppercase text-[#555555] mb-12">
         Writing
       </h1>
       <ul className="space-y-8">
         {posts.map((post) => (
-          <li key={post.slug} className="border-t border-[#f0f0f0] pt-6">
+          <li key={post.slug} className="border-t border-[#1f1f1f] pt-6">
             <Link href={`/writing/${post.slug}`} className="group block">
               <div className="flex items-baseline justify-between">
                 <span className="text-lg group-hover:underline underline-offset-[3px] leading-snug">
                   {post.title}
                 </span>
-                <span className="font-mono text-xs text-[#aaaaaa] ml-6 shrink-0">
+                <span className="font-mono text-xs text-[#444444] ml-6 shrink-0">
                   {post.date}
                 </span>
               </div>
               {post.description && (
-                <p className="text-[#777777] text-[0.9375rem] mt-1 leading-relaxed">
+                <p className="text-[#666666] text-[0.9375rem] mt-1 leading-relaxed">
                   {post.description}
                 </p>
               )}
-              <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#bbbbbb] mt-2 inline-block">
+              <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#3a3a3a] mt-2 inline-block">
                 {post.tag}
               </span>
             </Link>

@@ -10,11 +10,11 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="border-b border-[#f0f0f0]">
+    <header className="border-b border-[#1f1f1f]">
       <nav className="max-w-2xl mx-auto px-6 py-5 flex items-center justify-between">
         <Link
           href="/"
-          className="font-mono text-sm font-medium tracking-widest uppercase text-[#111111] hover:text-[#444444] transition-colors"
+          className="font-mono text-sm font-medium tracking-widest uppercase text-[#efefef] hover:text-[#aaaaaa] transition-colors"
         >
           SB
         </Link>
@@ -23,7 +23,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-mono text-[0.7rem] tracking-widest uppercase text-[#999999] hover:text-[#111111] transition-colors"
+              className="font-mono text-[0.7rem] tracking-widest uppercase text-[#555555] hover:text-[#efefef] transition-colors"
             >
               {link.label}
             </Link>

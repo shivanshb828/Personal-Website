@@ -34,15 +34,15 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   return (
     <article>
       <header className="mb-12">
-        <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#bbbbbb]">
+        <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#3a3a3a]">
           {post.tag}
         </span>
-        <h1 className="text-3xl leading-tight mt-2">{post.title}</h1>
-        <time className="font-mono text-xs text-[#aaaaaa] mt-3 block">
+        <h1 className="text-3xl leading-tight mt-2 text-[#efefef]">{post.title}</h1>
+        <time className="font-mono text-xs text-[#444444] mt-3 block">
           {post.date}
         </time>
       </header>
-      <div className="prose prose-stone max-w-none">
+      <div className="prose prose-stone max-w-none prose-invert">
         <MDXRemote source={post.content} />
       </div>
     </article>

@@ -37,19 +37,19 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div>
-      <h1 className="font-mono text-xs tracking-widest uppercase text-[#999999] mb-12">
+      <h1 className="font-mono text-xs tracking-widest uppercase text-[#555555] mb-12">
         Projects
       </h1>
       <ul className="space-y-0">
         {projects.map((project, i) => (
-          <li key={i} className="border-t border-[#f0f0f0] py-8">
+          <li key={i} className="border-t border-[#1f1f1f] py-8">
             <div className="flex items-baseline justify-between">
               <h2 className="text-xl">{project.name}</h2>
-              <span className="font-mono text-xs text-[#aaaaaa] ml-6 shrink-0">
+              <span className="font-mono text-xs text-[#444444] ml-6 shrink-0">
                 {project.year}
               </span>
             </div>
-            <p className="text-[#555555] mt-2 leading-[1.8] text-[0.9375rem]">
+            <p className="text-[#777777] mt-2 leading-[1.8] text-[0.9375rem]">
               {project.description}
             </p>
             <div className="flex gap-5 mt-3">
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="font-mono text-[0.65rem] uppercase tracking-widest text-[#aaaaaa] hover:text-[#111111] transition-colors"
+                  className="font-mono text-[0.65rem] uppercase tracking-widest text-[#444444] hover:text-[#efefef] transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

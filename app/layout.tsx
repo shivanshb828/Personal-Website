@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${ebGaramond.variable} ${dmMono.variable}`}>
-      <body className="bg-white text-[#111111] font-serif">
+      <body className="bg-[#0a0a0a] text-[#efefef] font-serif">
         <Navbar />
         <main className="max-w-2xl mx-auto px-6 py-14">
           {children}
