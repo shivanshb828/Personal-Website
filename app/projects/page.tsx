@@ -4,6 +4,27 @@ export const metadata: Metadata = {
   title: 'Projects — Shivansh Bansal',
 }
 
+const papers = [
+  {
+    title: '[Paper Title 1]',
+    venue: '[Conference or Journal], [Year]',
+    year: '2024',
+    link: 'https://arxiv.org/abs/[paper-id]',
+  },
+  {
+    title: '[Paper Title 2]',
+    venue: '[Conference or Journal], [Year]',
+    year: '2024',
+    link: 'https://arxiv.org/abs/[paper-id]',
+  },
+  {
+    title: '[Paper Title 3]',
+    venue: '[Conference or Journal], [Year]',
+    year: '2023',
+    link: 'https://arxiv.org/abs/[paper-id]',
+  },
+]
+
 const projects = [
   {
     name: '[Project Name 1]',
@@ -38,32 +59,61 @@ export default function ProjectsPage() {
   return (
     <div>
       <h1 className="text-5xl font-normal leading-tight mb-16">Projects</h1>
-      <ul className="space-y-0">
-        {projects.map((project, i) => (
-          <li key={i} className="border-t border-[#1a1a1a] py-8">
-            <div className="flex items-baseline justify-between gap-6">
-              <h2 className="text-xl font-normal">{project.name}</h2>
-              <span className="font-mono text-xs text-[#3a3a3a] shrink-0">{project.year}</span>
-            </div>
-            <p className="text-[#777777] mt-3 leading-[1.8] text-[0.9375rem]">
-              {project.description}
-            </p>
-            <div className="flex gap-5 mt-4">
-              {project.links.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="font-mono text-[0.65rem] uppercase tracking-widest text-[#3a3a3a] hover:text-[#efefef] transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.label} ↗
-                </a>
-              ))}
-            </div>
-          </li>
-        ))}
-      </ul>
+
+      {/* Research section */}
+      <section className="mb-20">
+        <h2 className="font-mono text-[0.65rem] uppercase tracking-widest text-[#777777] mb-8">
+          / research
+        </h2>
+        <ul className="space-y-0">
+          {papers.map((paper, i) => (
+            <li key={i} className="border-t border-[#1a1a1a] py-7">
+              <a
+                href={paper.link}
+                className="text-[1.0625rem] hover:underline underline-offset-[3px] leading-snug block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {paper.title}
+              </a>
+              <p className="font-mono text-xs text-[#555555] mt-2">{paper.venue}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Technical projects section */}
+      <section>
+        <h2 className="font-mono text-[0.65rem] uppercase tracking-widest text-[#777777] mb-8">
+          / technical projects
+        </h2>
+        <ul className="space-y-0">
+          {projects.map((project, i) => (
+            <li key={i} className="border-t border-[#1a1a1a] py-8">
+              <div className="flex items-baseline justify-between gap-6">
+                <h3 className="text-xl font-normal">{project.name}</h3>
+                <span className="font-mono text-xs text-[#3a3a3a] shrink-0">{project.year}</span>
+              </div>
+              <p className="text-[#777777] mt-3 leading-[1.8] text-[0.9375rem]">
+                {project.description}
+              </p>
+              <div className="flex gap-5 mt-4">
+                {project.links.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className="font-mono text-[0.65rem] uppercase tracking-widest text-[#3a3a3a] hover:text-[#efefef] transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label} ↗
+                  </a>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   )
 }
