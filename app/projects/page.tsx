@@ -18,7 +18,7 @@ const papers = [
 const projects = [
   {
     name: 'Snoopy AI',
-    description: 'An AI phone agent built for small owner-operated businesses (like dry cleaners or salons). It answers calls 24/7, handles orders and customer inquiries in real time, and syncs everything to the owner&aposs Notion workspace',
+    description: 'An AI phone agent built for small owner-operated businesses (like dry cleaners or salons). It answers calls 24/7, handles orders and customer inquiries in real time, and syncs everything to the owner&apos;s Notion workspace.',
     year: '2026',
     links: [
       { label: 'GitHub', href: 'https://github.com/shivanshb828/snoopyAI' },
