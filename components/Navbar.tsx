@@ -25,9 +25,9 @@ export default function Navbar() {
         </div>
         <Link
           href="/"
-          className="font-mono text-sm font-medium tracking-widest uppercase text-[#333333] hover:text-[#efefef] transition-colors"
+          className="font-mono text-xs tracking-widest uppercase text-[#555555] hover:text-[#efefef] transition-colors"
         >
-          SB
+          Shivansh Bansal
         </Link>
       </nav>
     </header>
