@@ -1,14 +1,6 @@
 import Link from 'next/link'
-import { getRecentPosts } from '@/lib/mdx'
-
-function fmtDate(iso: string) {
-  const [year, month] = iso.split('-')
-  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-  return `${months[parseInt(month) - 1]} ${year}`
-}
 
 export default function HomePage() {
-  const posts = getRecentPosts(3)
 
   return (
     <div className="space-y-20">
@@ -29,29 +21,7 @@ export default function HomePage() {
         <h2 className="font-mono text-[0.65rem] tracking-widest text-[#777777] mb-6">
           / writing
         </h2>
-        <ul className="space-y-5">
-          {posts.map((post) => (
-            <li key={post.slug}>
-              <Link
-                href={`/writing/${post.slug}`}
-                className="group flex items-baseline justify-between"
-              >
-                <span className="text-[1.0625rem] group-hover:underline underline-offset-[3px] leading-snug">
-                  {post.title}
-                </span>
-                <span className="font-mono text-xs text-[#666666] ml-6 shrink-0">
-                  {fmtDate(post.date)}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <Link
-          href="/writing"
-          className="font-mono text-[0.65rem] tracking-widest text-[#666666] hover:text-[#efefef] transition-colors mt-7 inline-block"
-        >
-          all writing →
-        </Link>
+        <p className="font-mono text-xs text-[#666666] tracking-widest uppercase">Coming soon...</p>
       </section>
 
       <section>
