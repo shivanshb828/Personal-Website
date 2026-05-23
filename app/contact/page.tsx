@@ -7,24 +7,24 @@ export const metadata: Metadata = {
 const socials = [
   {
     label: 'Email',
-    display: '[shivanshb@ucla.edu]',
+    display: 'shivanshb@ucla.edu',
     href: 'mailto:[shivanshb@ucla.edu]',
   },
   {
     label: 'GitHub',
-    display: '[shivanshb828]',
+    display: 'shivanshb828',
     href: 'https://github.com/shivanshb828',
     external: true,
   },
   {
     label: 'Twitter',
-    display: '@[your-twitter]',
-    href: 'https://twitter.com/[your-twitter]',
+    display: '@shivanshb2008',
+    href: 'https://twitter.com/shivanshb2008',
     external: true,
   },
   {
     label: 'LinkedIn',
-    display: '[LinkedIn]',
+    display: 'shivansh~bansal',
     href: 'https://linkedin.com/in/shivansh~bansal',
     external: true,
   },
@@ -35,7 +35,7 @@ export default function ContactPage() {
     <div>
       <h1 className="text-5xl font-normal leading-tight mb-6">Contact</h1>
       <p className="text-lg leading-[1.8] mb-16 max-w-lg">
-        [A short, welcoming line about how you like to hear from people — what kind of conversations you enjoy, what you&apos;re open to connecting about.]
+        [Hey there! I'm always open to connecting and having a conversation about anything...]
       </p>
 
       <div className="space-y-0">
