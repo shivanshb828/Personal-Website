@@ -59,7 +59,7 @@ export default function ProjectsPage() {
           <div>
             <h2 className="text-2xl font-normal leading-tight">Research</h2>
             <p className="font-mono text-[0.75rem] text-[#555555] mt-1 italic">
-              [Interested in machine learning, hardware optimization, and the life sciences. My research focuses on developing novel algorithms and models that can advance our understanding of complex biological systems and improve healthcare outcomes.]
+              Interested in machine learning, hardware optimization, and the life sciences.
             </p>
           </div>
           <a
