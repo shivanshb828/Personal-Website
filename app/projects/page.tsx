@@ -17,12 +17,11 @@ const papers = [
 
 const projects = [
   {
-    name: '[Project Name 1]',
-    description: '[A short description of what this project does and why you built it.]',
-    year: '2024',
+    name: 'Snoopy AI',
+    description: 'An AI phone agent built for small owner-operated businesses (like dry cleaners or salons). It answers calls 24/7, handles orders and customer inquiries in real time, and syncs everything to the owner&aposs Notion workspace',
+    year: '2026',
     links: [
-      { label: 'GitHub', href: 'https://github.com/[your-github]/[repo]' },
-      { label: 'Live', href: 'https://[project-url].com' },
+      { label: 'GitHub', href: 'https://github.com/shivanshb828/snoopyAI' },
     ],
   },
   {
