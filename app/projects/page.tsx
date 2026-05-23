@@ -94,7 +94,7 @@ export default function ProjectsPage() {
         <div className="mb-3">
           <h2 className="text-2xl font-normal leading-tight">Technical Projects</h2>
           <p className="font-mono text-[0.75rem] text-[#555555] mt-1 italic">
-            Tools, experiments, and open-source contributions.
+            Experiments, hackathon projects, and other fun stuff I've built.
           </p>
         </div>
 
