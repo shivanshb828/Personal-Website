@@ -15,7 +15,7 @@ export default function HomePage() {
       <section className="pt-6">
         <h1 className="text-5xl leading-[1.1] font-normal">Shivansh Bansal</h1>
         <p className="font-mono text-xs tracking-widest text-[#666666] mt-4 uppercase">
-          [Role] — [City]
+          Machine Learning Engineer (Applied AI) — San Francisco, CA
         </p>
         <p className="text-lg leading-[1.8] mt-8 max-w-lg">
           [A brief intro about what you do — researcher, builder, writer. Where you&apos;re based. What you&apos;re working on.]
