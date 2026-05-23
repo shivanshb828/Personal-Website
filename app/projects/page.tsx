@@ -7,29 +7,12 @@ export const metadata: Metadata = {
 
 const papers = [
   {
-    title: '[Paper Title 1]',
-    venue: '[Conference or Journal], [Year]',
-    year: '2024',
-    link: 'https://arxiv.org/abs/[paper-id]',
+    title: 'Allosteric Regulation of Ectopically Expressed Olfactory Receptors in Tumor Cells: Ligand-Receptor Topology and Machine Learning-Assisted Drug Discovery',
+    venue: 'Research Square (RECOMB, ISMB, SDDS), [2025]',
+    year: '2025',
+    link: 'https://www.researchsquare.com/article/rs-6950845/v1',
   },
-  {
-    title: '[Paper Title 2]',
-    venue: '[Conference or Journal], [Year]',
-    year: '2024',
-    link: 'https://arxiv.org/abs/[paper-id]',
-  },
-  {
-    title: '[Paper Title 3]',
-    venue: '[Conference or Journal], [Year]',
-    year: '2023',
-    link: 'https://arxiv.org/abs/[paper-id]',
-  },
-  {
-    title: '[Paper Title 4]',
-    venue: '[Conference or Journal], [Year]',
-    year: '2023',
-    link: 'https://arxiv.org/abs/[paper-id]',
-  },
+  
 ]
 
 const projects = [
@@ -76,7 +59,7 @@ export default function ProjectsPage() {
           <div>
             <h2 className="text-2xl font-normal leading-tight">Research</h2>
             <p className="font-mono text-[0.75rem] text-[#555555] mt-1 italic">
-              [A one-line summary of your research interests.]
+              [Interested in machine learning, hardware optimization, and the life sciences. My research focuses on developing novel algorithms and models that can advance our understanding of complex biological systems and improve healthcare outcomes.]
             </p>
           </div>
           <a
@@ -85,7 +68,7 @@ export default function ProjectsPage() {
             rel="noopener noreferrer"
             className="font-mono text-[0.65rem] uppercase tracking-widest border border-[#2a2a2a] text-[#666666] hover:border-[#555555] hover:text-[#efefef] transition-colors px-3 py-2 shrink-0"
           >
-            Google Scholar ↗
+            Google Scholar [coming soon] ↗
           </a>
         </div>
 
