@@ -10,14 +10,8 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="border-b border-[#1f1f1f]">
-      <nav className="max-w-2xl mx-auto px-6 py-5 flex items-center justify-between">
-        <Link
-          href="/"
-          className="font-mono text-sm font-medium tracking-widest uppercase text-[#efefef] hover:text-[#aaaaaa] transition-colors"
-        >
-          SB
-        </Link>
+    <header>
+      <nav className="max-w-2xl mx-auto px-6 py-6 flex items-center justify-between">
         <div className="flex items-center gap-7">
           {links.map((link) => (
             <Link
@@ -29,6 +23,12 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
+        <Link
+          href="/"
+          className="font-mono text-sm font-medium tracking-widest uppercase text-[#333333] hover:text-[#efefef] transition-colors"
+        >
+          SB
+        </Link>
       </nav>
     </header>
   )

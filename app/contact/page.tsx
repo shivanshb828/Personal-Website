@@ -32,24 +32,21 @@ const socials = [
 
 export default function ContactPage() {
   return (
-    <div className="space-y-10">
-      <h1 className="font-mono text-xs tracking-widest uppercase text-[#555555]">
-        Contact
-      </h1>
-
-      <p className="text-lg leading-[1.8]">
+    <div>
+      <h1 className="text-5xl font-normal leading-tight mb-6">Contact</h1>
+      <p className="text-lg leading-[1.8] mb-16 max-w-lg">
         [A short, welcoming line about how you like to hear from people — what kind of conversations you enjoy, what you&apos;re open to connecting about.]
       </p>
 
-      <div className="space-y-4 border-t border-[#1f1f1f] pt-8">
+      <div className="space-y-0">
         {socials.map((social) => (
-          <div key={social.label} className="flex items-center gap-0">
-            <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#444444] w-24 shrink-0">
+          <div key={social.label} className="border-t border-[#1a1a1a] py-5 grid grid-cols-[140px_1fr] gap-8 items-center">
+            <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#444444]">
               {social.label}
             </span>
             <a
               href={social.href}
-              className="text-[0.9375rem] hover:underline underline-offset-[3px] text-[#aaaaaa] hover:text-[#efefef] transition-colors"
+              className="text-[0.9375rem] text-[#aaaaaa] hover:text-[#efefef] hover:underline underline-offset-[3px] transition-colors"
               {...(social.external
                 ? { target: '_blank', rel: 'noopener noreferrer' }
                 : {})}

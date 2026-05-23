@@ -40,13 +40,11 @@ const categories = [
 export default function StackPage() {
   return (
     <div>
-      <h1 className="font-mono text-xs tracking-widest uppercase text-[#555555] mb-12">
-        Stack
-      </h1>
+      <h1 className="text-5xl font-normal leading-tight mb-16">Stack</h1>
       <div className="space-y-0">
         {categories.map((cat) => (
-          <div key={cat.label} className="border-t border-[#1f1f1f] py-8">
-            <h2 className="font-mono text-[0.65rem] uppercase tracking-widest text-[#444444] mb-3">
+          <div key={cat.label} className="border-t border-[#1a1a1a] py-8 grid grid-cols-[140px_1fr] gap-8">
+            <h2 className="font-mono text-[0.65rem] uppercase tracking-widest text-[#444444] pt-1">
               {cat.label}
             </h2>
             <p className="leading-[1.8] text-[#aaaaaa] text-[0.9375rem]">

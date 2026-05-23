@@ -23,6 +23,12 @@ export async function generateMetadata({
   }
 }
 
+function fmtDate(iso: string) {
+  const [year, month] = iso.split('-')
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+  return `${months[parseInt(month) - 1]} ${year}`
+}
+
 export default function PostPage({ params }: { params: { slug: string } }) {
   let post
   try {
@@ -33,14 +39,13 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   return (
     <article>
-      <header className="mb-12">
-        <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#3a3a3a]">
-          {post.tag}
-        </span>
-        <h1 className="text-3xl leading-tight mt-2 text-[#efefef]">{post.title}</h1>
-        <time className="font-mono text-xs text-[#444444] mt-3 block">
-          {post.date}
-        </time>
+      <header className="mb-14">
+        <h1 className="text-4xl font-normal leading-tight">{post.title}</h1>
+        <div className="flex items-center gap-5 mt-5">
+          <time className="font-mono text-xs text-[#3a3a3a]">{fmtDate(post.date)}</time>
+          <span className="font-mono text-xs text-[#2d2d2d]">·</span>
+          <span className="font-mono text-xs text-[#2d2d2d] uppercase tracking-widest">{post.tag}</span>
+        </div>
       </header>
       <div className="prose prose-stone max-w-none prose-invert">
         <MDXRemote source={post.content} />
