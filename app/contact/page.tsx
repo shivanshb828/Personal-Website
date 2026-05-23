@@ -35,7 +35,7 @@ export default function ContactPage() {
     <div>
       <h1 className="text-5xl font-normal leading-tight mb-6">Contact</h1>
       <p className="text-lg leading-[1.8] mb-16 max-w-lg">
-        [Hey there! I'm always open to connecting and having a conversation about any cool ideas or research you've been working on, potential collaborations, or just to say hi. Feel free to reach out to me through any of the channels below. I look forward to hearing from you!]
+        Hey there! I'm always open to connecting and having a conversation about any cool ideas or research you've been working on, potential collaborations, or just to say hi. Feel free to reach out to me through any of the channels below. I look forward to hearing from you!
       </p>
 
       <div className="space-y-0">
