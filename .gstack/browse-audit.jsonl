@@ -1,0 +1,10 @@
+{"ts":"2026-05-23T06:31:01.589Z","cmd":"goto","args":"https://rishabjaink.com","origin":"https://www.rishabjaink.com/","durationMs":1135,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:31:06.507Z","cmd":"screenshot","args":"/tmp/rishabjaink-home.png","origin":"https://www.rishabjaink.com/","durationMs":810,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:39:41.684Z","cmd":"goto","args":"http://localhost:3099","origin":"http://localhost:3099/","durationMs":2457,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:39:43.860Z","cmd":"screenshot","args":"/tmp/sb-home.png","origin":"http://localhost:3099/","durationMs":93,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:39:53.549Z","cmd":"goto","args":"http://localhost:3099/writing","origin":"http://localhost:3099/writing","durationMs":267,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:39:54.664Z","cmd":"screenshot","args":"/tmp/sb-writing.png","origin":"http://localhost:3099/writing","durationMs":43,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:39:55.271Z","cmd":"goto","args":"http://localhost:3099/writing/on-building-slowly","origin":"http://localhost:3099/writing/on-building-slowly","durationMs":563,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:39:56.431Z","cmd":"screenshot","args":"/tmp/sb-post.png","origin":"http://localhost:3099/writing/on-building-slowly","durationMs":80,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:39:56.603Z","cmd":"goto","args":"http://localhost:3099/contact","origin":"http://localhost:3099/contact","durationMs":126,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T06:39:57.706Z","cmd":"screenshot","args":"/tmp/sb-contact.png","origin":"http://localhost:3099/contact","durationMs":32,"status":"ok","hasCookies":false,"mode":"launched"}
