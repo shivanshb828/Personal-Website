@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ScrollCarousel from '@/components/ScrollCarousel'
 
 export const metadata: Metadata = {
   title: 'Projects — Shivansh Bansal',
@@ -23,13 +24,18 @@ const papers = [
     year: '2023',
     link: 'https://arxiv.org/abs/[paper-id]',
   },
+  {
+    title: '[Paper Title 4]',
+    venue: '[Conference or Journal], [Year]',
+    year: '2023',
+    link: 'https://arxiv.org/abs/[paper-id]',
+  },
 ]
 
 const projects = [
   {
     name: '[Project Name 1]',
-    description:
-      '[A short description of what this project does, why you built it, and what makes it interesting. 2–3 sentences is ideal.]',
+    description: '[A short description of what this project does and why you built it.]',
     year: '2024',
     links: [
       { label: 'GitHub', href: 'https://github.com/[your-github]/[repo]' },
@@ -38,81 +44,126 @@ const projects = [
   },
   {
     name: '[Project Name 2]',
-    description:
-      '[A short description of what this project does, why you built it, and what makes it interesting. 2–3 sentences is ideal.]',
+    description: '[A short description of what this project does and why you built it.]',
     year: '2024',
     links: [{ label: 'GitHub', href: 'https://github.com/[your-github]/[repo]' }],
   },
   {
     name: '[Project Name 3]',
-    description:
-      '[A short description of what this project does, why you built it, and what makes it interesting. 2–3 sentences is ideal.]',
+    description: '[A short description of what this project does and why you built it.]',
     year: '2023',
     links: [
       { label: 'GitHub', href: 'https://github.com/[your-github]/[repo]' },
       { label: 'Demo', href: 'https://[demo-url].com' },
     ],
   },
+  {
+    name: '[Project Name 4]',
+    description: '[A short description of what this project does and why you built it.]',
+    year: '2023',
+    links: [{ label: 'GitHub', href: 'https://github.com/[your-github]/[repo]' }],
+  },
 ]
 
 export default function ProjectsPage() {
   return (
-    <div>
-      <h1 className="text-5xl font-normal leading-tight mb-16">Projects</h1>
+    <div className="space-y-20">
+      <h1 className="text-5xl font-normal leading-tight">Projects</h1>
 
       {/* Research section */}
-      <section className="mb-20">
-        <h2 className="font-mono text-[0.65rem] uppercase tracking-widest text-[#777777] mb-8">
-          / research
-        </h2>
-        <ul className="space-y-0">
-          {papers.map((paper, i) => (
-            <li key={i} className="border-t border-[#1a1a1a] py-7">
+      <section>
+        <div className="flex items-end justify-between mb-3">
+          <div>
+            <h2 className="text-2xl font-normal leading-tight">Research</h2>
+            <p className="font-mono text-[0.75rem] text-[#555555] mt-1 italic">
+              [A one-line summary of your research interests.]
+            </p>
+          </div>
+          <a
+            href="https://scholar.google.com/[your-profile]"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-[0.65rem] uppercase tracking-widest border border-[#2a2a2a] text-[#666666] hover:border-[#555555] hover:text-[#efefef] transition-colors px-3 py-2 shrink-0"
+          >
+            Google Scholar ↗
+          </a>
+        </div>
+
+        <div className="border-t border-[#1a1a1a] pt-6">
+          <ScrollCarousel count={papers.length} countLabel="papers">
+            {papers.map((paper, i) => (
               <a
+                key={i}
                 href={paper.link}
-                className="text-[1.0625rem] hover:underline underline-offset-[3px] leading-snug block"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="group flex-none w-[260px] border border-[#1a1a1a] bg-[#0e0e0e] hover:border-[#2a2a2a] transition-colors p-5 flex flex-col justify-between min-h-[180px]"
               >
-                {paper.title}
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[#444444]">
+                      Research
+                    </span>
+                    <span className="font-mono text-[0.55rem] text-[#333333]">{paper.year}</span>
+                  </div>
+                  <p className="text-[0.9375rem] leading-snug group-hover:underline underline-offset-[3px]">
+                    {paper.title}
+                  </p>
+                </div>
+                <p className="font-mono text-[0.6rem] uppercase tracking-widest text-[#444444] mt-4">
+                  {paper.venue}
+                </p>
               </a>
-              <p className="font-mono text-xs text-[#555555] mt-2">{paper.venue}</p>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </ScrollCarousel>
+        </div>
       </section>
 
       {/* Technical projects section */}
       <section>
-        <h2 className="font-mono text-[0.65rem] uppercase tracking-widest text-[#777777] mb-8">
-          / technical projects
-        </h2>
-        <ul className="space-y-0">
-          {projects.map((project, i) => (
-            <li key={i} className="border-t border-[#1a1a1a] py-8">
-              <div className="flex items-baseline justify-between gap-6">
-                <h3 className="text-xl font-normal">{project.name}</h3>
-                <span className="font-mono text-xs text-[#3a3a3a] shrink-0">{project.year}</span>
+        <div className="mb-3">
+          <h2 className="text-2xl font-normal leading-tight">Technical Projects</h2>
+          <p className="font-mono text-[0.75rem] text-[#555555] mt-1 italic">
+            Tools, experiments, and open-source contributions.
+          </p>
+        </div>
+
+        <div className="border-t border-[#1a1a1a] pt-6">
+          <ScrollCarousel count={projects.length} countLabel="projects">
+            {projects.map((project, i) => (
+              <div
+                key={i}
+                className="flex-none w-[260px] border border-[#1a1a1a] bg-[#0e0e0e] p-5 flex flex-col justify-between min-h-[200px]"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[#444444]">
+                      Technical
+                    </span>
+                    <span className="font-mono text-[0.55rem] text-[#333333]">{project.year}</span>
+                  </div>
+                  <p className="text-[0.9375rem] leading-snug font-normal">{project.name}</p>
+                  <p className="text-[0.8125rem] text-[#555555] leading-relaxed mt-2">
+                    {project.description}
+                  </p>
+                </div>
+                <div className="flex gap-4 mt-4">
+                  {project.links.map((link) => (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-[0.6rem] uppercase tracking-widest text-[#444444] hover:text-[#efefef] transition-colors"
+                    >
+                      {link.label} ↗
+                    </a>
+                  ))}
+                </div>
               </div>
-              <p className="text-[#777777] mt-3 leading-[1.8] text-[0.9375rem]">
-                {project.description}
-              </p>
-              <div className="flex gap-5 mt-4">
-                {project.links.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    className="font-mono text-[0.65rem] uppercase tracking-widest text-[#3a3a3a] hover:text-[#efefef] transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {link.label} ↗
-                  </a>
-                ))}
-              </div>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </ScrollCarousel>
+        </div>
       </section>
     </div>
   )
