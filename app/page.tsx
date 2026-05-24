@@ -10,10 +10,10 @@ export default function HomePage() {
           Machine Learning Engineer (Applied AI) — San Francisco, CA
         </p>
         <p className="text-lg leading-[1.8] mt-8 max-w-lg">
-          [A brief intro about what you do — researcher, builder, writer. Where you&apos;re based. What you&apos;re working on.]
+          I am currently studying CS + Computational Biology at the UCLA. Most recently, I won 2nd Place and $23,000 at the Notion Developer Platform Hackathon!
         </p>
         <p className="text-lg leading-[1.8] mt-4 max-w-lg text-[#888888]">
-          [A second sentence or two about your interests, research areas, or what this site is for.]
+          I'm interested in frontier AI research, and especially its applications to healthcare and hardware. I like to talk about theory, but simultaneously build AI-native products for everyday life.
         </p>
       </section>
 
@@ -29,7 +29,7 @@ export default function HomePage() {
           / projects
         </h2>
         <p className="text-[1.0625rem] leading-[1.8] text-[#999999] max-w-lg">
-          [Brief 1–2 sentence teaser about what you&apos;re building. Something that gives a sense of your interests and what you care about making.]
+          Researching the application of machine learning for drug and aptamer discovery, while also building productivity tools like AI Voice Agents.  
         </p>
         <Link
           href="/projects"
