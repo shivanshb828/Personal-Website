@@ -65,7 +65,7 @@ export default function ProjectsPage() {
             rel="noopener noreferrer"
             className="font-mono text-[0.65rem] uppercase tracking-widest border border-[#2a2a2a] text-[#666666] hover:border-[#555555] hover:text-[#efefef] transition-colors px-3 py-2 shrink-0"
           >
-            Google Scholar [coming soon] ↗
+            Google Scholar ↗
           </a>
         </div>
 
