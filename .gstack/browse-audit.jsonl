@@ -26,3 +26,7 @@
 {"ts":"2026-05-23T16:23:30.329Z","cmd":"screenshot","args":"/tmp/new-writing.png","origin":"http://localhost:3099/writing","durationMs":48,"status":"ok","hasCookies":false,"mode":"launched"}
 {"ts":"2026-05-23T16:23:30.553Z","cmd":"goto","args":"http://localhost:3099/stack","origin":"http://localhost:3099/stack","durationMs":153,"status":"ok","hasCookies":false,"mode":"launched"}
 {"ts":"2026-05-23T16:23:31.684Z","cmd":"screenshot","args":"/tmp/new-stack.png","origin":"http://localhost:3099/stack","durationMs":61,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T22:31:21.248Z","cmd":"goto","args":"https://www.rishabjaink.com/stuff","origin":"https://www.rishabjaink.com/stuff","durationMs":880,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T22:31:21.983Z","cmd":"screenshot","args":"/tmp/stuff-full.png","origin":"https://www.rishabjaink.com/stuff","durationMs":666,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T22:31:28.274Z","cmd":"viewport","args":"1280x900","origin":"https://www.rishabjaink.com/stuff","durationMs":2,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-23T22:31:28.326Z","cmd":"text","args":"","origin":"https://www.rishabjaink.com/stuff","durationMs":3,"status":"ok","hasCookies":false,"mode":"launched"}

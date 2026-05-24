@@ -16,6 +16,14 @@ const papers = [
 ]
 
 const projects = [
+  {name: 'Conditional Aptamer-Protein Interaction Network',
+    description: 'A novel deep learning architecture for predicting DNA aptamer binding to arbitrary protein targets, built for Continuity\'s real-time physiological biosensing platform.'
+    year: '2026',
+    links: [
+      { label: 'GitHub', href: 'http://github.com/shivanshb828/CondAptNet' },
+    ],
+  }
+  
   {
     name: 'Snoopy AI',
     description: 'An AI phone agent built for small owner-operated businesses (like dry cleaners or salons). It answers calls 24/7, handles orders and customer inquiries in real time, and syncs everything to the owner\'s Notion workspace.',
@@ -24,6 +32,7 @@ const projects = [
       { label: 'GitHub', href: 'https://github.com/shivanshb828/snoopyAI' },
     ],
   },
+  
   {
     name: 'Global Education Inequality Monitoring System',
     description: 'GEIMS is an AI-powered, real-time monitoring platform that tracks and visualizes global education inequality across countries and regions',
@@ -32,6 +41,7 @@ const projects = [
       { label: 'GitHub', href: 'http://github.com/shivanshb828/geims' },
       { label: 'Live', href: 'https://unesco-geims.org/' },
     ],
+
   },
 ]
 
