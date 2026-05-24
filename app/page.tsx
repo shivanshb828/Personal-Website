@@ -15,6 +15,24 @@ export default function HomePage() {
         <p className="text-lg leading-[1.8] mt-4 max-w-lg text-[#888888]">
           I'm interested in frontier AI research, and especially its applications to healthcare and hardware. I like to talk about theory, but simultaneously build AI-native products for everyday life.
         </p>
+        <div className="flex items-center gap-5 mt-8">
+          {[
+            { label: 'LinkedIn', href: 'https://linkedin.com/in/shivanshbansal' },
+            { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=shivanshbansal' },
+            { label: 'Twitter', href: 'https://twitter.com/shivanshb828' },
+            { label: 'GitHub', href: 'https://github.com/shivanshb828' },
+          ].map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[0.65rem] tracking-widest text-[#555555] hover:text-[#efefef] transition-colors"
+            >
+              [{link.label}]
+            </a>
+          ))}
+        </div>
       </section>
 
       <section>
