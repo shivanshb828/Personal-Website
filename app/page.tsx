@@ -10,7 +10,7 @@ export default function HomePage() {
           Machine Learning Engineer (Applied AI) — San Francisco, CA
         </p>
         <p className="text-lg leading-[1.8] mt-8 max-w-lg">
-          I am currently studying CS + Computational Biology at the UCLA. Most recently, I won 2nd Place and $23,000 at the Notion Developer Platform Hackathon!
+          I am currently studying CS + Computational Biology at UCLA. Most recently, I won 2nd Place and $23,000 at the Notion Developer Platform Hackathon!
         </p>
         <p className="text-lg leading-[1.8] mt-4 max-w-lg text-[#888888]">
           I'm interested in frontier AI research, and especially its applications to healthcare and hardware. I like to talk about theory, but simultaneously build AI-native products for everyday life.
