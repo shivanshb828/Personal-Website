@@ -17,9 +17,9 @@ export default function HomePage() {
         </p>
         <div className="flex items-center gap-5 mt-8">
           {[
-            { label: 'LinkedIn', href: 'https://linkedin.com/in/shivanshbansal' },
+            { label: 'LinkedIn', href: 'https://linkedin.com/in/shivansh~bansal' },
             { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=shivanshbansal' },
-            { label: 'Twitter', href: 'https://twitter.com/shivanshb828' },
+            { label: 'Twitter', href: 'https://twitter.com/shivanshb2008' },
             { label: 'GitHub', href: 'https://github.com/shivanshb828' },
           ].map((link) => (
             <a
