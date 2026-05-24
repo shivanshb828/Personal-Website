@@ -17,12 +17,12 @@ const papers = [
 
 const projects = [
   {name: 'Conditional Aptamer-Protein Interaction Network',
-    description: 'A novel deep learning architecture for predicting DNA aptamer binding to arbitrary protein targets, built for Continuity\'s real-time physiological biosensing platform.'
+    description: 'A novel deep learning architecture for predicting DNA aptamer binding to arbitrary protein targets, built for Continuity\'s real-time physiological biosensing platform.',
     year: '2026',
     links: [
       { label: 'GitHub', href: 'http://github.com/shivanshb828/CondAptNet' },
     ],
-  }
+  },
   
   {
     name: 'Snoopy AI',
