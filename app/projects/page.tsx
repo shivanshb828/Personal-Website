@@ -15,9 +15,9 @@ const papers = [
   
 ]
 
-const projects = [
+const projects: { name: string; description: React.ReactNode; year: string; links: { label: string; href: string }[] }[] = [
   {name: 'Conditional Aptamer-Protein Interaction Network',
-    description: 'A novel deep learning architecture for predicting DNA aptamer binding to arbitrary protein targets, built for Continuity\'s real-time physiological biosensing platform.',
+    description: <>A novel deep learning architecture for predicting DNA aptamer binding to arbitrary protein targets, built for <a href="https://continuity.bio/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-[3px] decoration-[#444444] hover:text-[#888888] transition-colors">Continuity&apos;s</a> real-time physiological biosensing platform.</>,
     year: '2026',
     links: [
       { label: 'GitHub', href: 'http://github.com/shivanshb828/CondAptNet' },
