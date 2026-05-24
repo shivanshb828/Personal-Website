@@ -60,7 +60,7 @@ export default function ProjectsPage() {
             </p>
           </div>
           <a
-            href="https://scholar.google.com/[your-profile]"
+            href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=pU6Fo0AAAAAJ&gmla=AIqSsVuc73rUjD3yXmVItVI2grxmo6Tcz8BMstm1MkouiOhLlCSNjl0dn1bfysW2OjeMS9IacKXdO_Z7Yk69SKZwvD2kM1Sg9KBpudGa"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-[0.65rem] uppercase tracking-widest border border-[#2a2a2a] text-[#666666] hover:border-[#555555] hover:text-[#efefef] transition-colors px-3 py-2 shrink-0"
