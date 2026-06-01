@@ -42,12 +42,12 @@ export default function PostPage({ params }: { params: { slug: string } }) {
       <header className="mb-14">
         <h1 className="text-4xl font-normal leading-tight">{post.title}</h1>
         <div className="flex items-center gap-5 mt-5">
-          <time className="font-mono text-xs text-[#3a3a3a]">{fmtDate(post.date)}</time>
-          <span className="font-mono text-xs text-[#2d2d2d]">·</span>
-          <span className="font-mono text-xs text-[#2d2d2d] uppercase tracking-widest">{post.tag}</span>
+          <time className="font-mono text-xs text-[#aaaaaa]">{fmtDate(post.date)}</time>
+          <span className="font-mono text-xs text-[#d5d5d5]">·</span>
+          <span className="font-mono text-xs text-[#d5d5d5] uppercase tracking-widest">{post.tag}</span>
         </div>
       </header>
-      <div className="prose prose-stone max-w-none prose-invert">
+      <div className="prose prose-stone max-w-none">
         <MDXRemote source={post.content} />
       </div>
     </article>

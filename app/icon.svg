@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <!-- Dark background with slight rounding -->
-  <rect width="32" height="32" fill="#0a0a0a" rx="5"/>
+  <rect width="32" height="32" fill="#fafafa" rx="5"/>
 
   <!-- Strand 1: sweeps left → right -->
   <path d="M9,4 C9,16 23,16 23,28"
-    stroke="#efefef" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    stroke="#111111" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 
   <!-- Strand 2: sweeps right → left -->
   <path d="M23,4 C23,16 9,16 9,28"
-    stroke="#efefef" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    stroke="#111111" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 
   <!-- Rungs connecting the strands at their widest separation points -->
   <line x1="11" y1="11" x2="21" y2="11"
-    stroke="#efefef" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+    stroke="#111111" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
   <line x1="11" y1="21" x2="21" y2="21"
-    stroke="#efefef" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+    stroke="#111111" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
 </svg>

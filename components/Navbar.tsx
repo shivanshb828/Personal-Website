@@ -16,7 +16,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-mono text-[0.7rem] tracking-widest uppercase text-[#555555] hover:text-[#efefef] transition-colors"
+              className="font-mono text-[0.7rem] tracking-widest uppercase text-[#888888] hover:text-[#111111] transition-colors"
             >
               {link.label}
             </Link>
@@ -24,7 +24,7 @@ export default function Navbar() {
         </div>
         <Link
           href="/"
-          className="font-mono text-xs tracking-widest uppercase text-[#efefef] hover:text-white transition-colors"
+          className="font-mono text-xs tracking-widest uppercase text-[#111111] hover:text-black transition-colors"
         >
           Shivansh Bansal
         </Link>

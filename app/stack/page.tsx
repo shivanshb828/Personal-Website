@@ -91,7 +91,7 @@ export default function StackPage() {
   return (
     <div>
       <h1 className="text-5xl font-normal leading-tight mb-4">Stack</h1>
-      <p className="text-[#555555] text-[0.9375rem] leading-[1.8] mb-16 max-w-lg">
+      <p className="text-[#888888] text-[0.9375rem] leading-[1.8] mb-16 max-w-lg">
         I spend too much time optimizing this. Here&apos;s what I actually use.
       </p>
 
@@ -99,14 +99,14 @@ export default function StackPage() {
         {sections.map((section) => (
           <div
             key={section.label}
-            className="border-t border-[#1a1a1a] py-8 grid grid-cols-[160px_1fr] gap-8"
+            className="border-t border-[#e5e5e5] py-8 grid grid-cols-[160px_1fr] gap-8"
           >
             <div className="pt-1">
-              <h2 className="font-mono text-[0.65rem] uppercase tracking-widest text-[#777777]">
+              <h2 className="font-mono text-[0.65rem] uppercase tracking-widest text-[#666666]">
                 {section.label}
               </h2>
               {section.tagline && (
-                <p className="font-mono text-[0.6rem] text-[#444444] mt-2 leading-relaxed italic">
+                <p className="font-mono text-[0.6rem] text-[#999999] mt-2 leading-relaxed italic">
                   {section.tagline}
                 </p>
               )}
@@ -120,14 +120,14 @@ export default function StackPage() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#cccccc] underline underline-offset-[3px] decoration-[#333333] hover:text-[#efefef] hover:decoration-[#666666] transition-colors"
+                      className="text-[#222222] underline underline-offset-[3px] decoration-[#cccccc] hover:text-[#111111] hover:decoration-[#777777] transition-colors"
                     >
                       {item.name}
                     </a>
                   ) : (
-                    <span className="text-[#cccccc]">{item.name}</span>
+                    <span className="text-[#222222]">{item.name}</span>
                   )}
-                  <span className="text-[#555555]"> — {item.note}</span>
+                  <span className="text-[#888888]"> — {item.note}</span>
                 </li>
               ))}
             </ul>

@@ -40,13 +40,13 @@ export default function ContactPage() {
 
       <div className="space-y-0">
         {socials.map((social) => (
-          <div key={social.label} className="border-t border-[#1a1a1a] py-5 grid grid-cols-[140px_1fr] gap-8 items-center">
-            <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#444444]">
+          <div key={social.label} className="border-t border-[#e5e5e5] py-5 grid grid-cols-[140px_1fr] gap-8 items-center">
+            <span className="font-mono text-[0.65rem] uppercase tracking-widest text-[#999999]">
               {social.label}
             </span>
             <a
               href={social.href}
-              className="text-[0.9375rem] text-[#aaaaaa] hover:text-[#efefef] hover:underline underline-offset-[3px] transition-colors"
+              className="text-[0.9375rem] text-[#333333] hover:text-[#111111] hover:underline underline-offset-[3px] transition-colors"
               {...(social.external
                 ? { target: '_blank', rel: 'noopener noreferrer' }
                 : {})}

@@ -17,7 +17,7 @@ const papers = [
 
 const projects: { name: string; description: React.ReactNode; year: string; links: { label: string; href: string }[] }[] = [
   {name: 'Conditional Aptamer-Protein Interaction Network',
-    description: <>A novel deep learning architecture for predicting DNA aptamer binding to arbitrary protein targets, built for <a href="https://continuity.bio/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-[3px] decoration-[#444444] hover:text-[#888888] transition-colors">Continuity&apos;s</a> real-time physiological biosensing platform.</>,
+    description: <>A novel deep learning architecture for predicting DNA aptamer binding to arbitrary protein targets, built for <a href="https://continuity.bio/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-[3px] decoration-[#999999] hover:text-[#555555] transition-colors">Continuity&apos;s</a> real-time physiological biosensing platform.</>,
     year: '2026',
     links: [
       { label: 'GitHub', href: 'http://github.com/shivanshb828/CondAptNet' },
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
         <div className="flex items-end justify-between mb-3">
           <div>
             <h2 className="text-2xl font-normal leading-tight">Research</h2>
-            <p className="font-mono text-[0.75rem] text-[#555555] mt-1 italic">
+            <p className="font-mono text-[0.75rem] text-[#888888] mt-1 italic">
               Interested in machine learning, hardware optimization, and the life sciences.
             </p>
           </div>
@@ -63,13 +63,13 @@ export default function ProjectsPage() {
             href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=pU6Fo0AAAAAJ&gmla=AIqSsVuc73rUjD3yXmVItVI2grxmo6Tcz8BMstm1MkouiOhLlCSNjl0dn1bfysW2OjeMS9IacKXdO_Z7Yk69SKZwvD2kM1Sg9KBpudGa"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[0.65rem] uppercase tracking-widest border border-[#2a2a2a] text-[#666666] hover:border-[#555555] hover:text-[#efefef] transition-colors px-3 py-2 shrink-0"
+            className="font-mono text-[0.65rem] uppercase tracking-widest border border-[#d8d8d8] text-[#777777] hover:border-[#888888] hover:text-[#111111] transition-colors px-3 py-2 shrink-0"
           >
             Google Scholar ↗
           </a>
         </div>
 
-        <div className="border-t border-[#1a1a1a] pt-6">
+        <div className="border-t border-[#e5e5e5] pt-6">
           <ScrollCarousel count={papers.length} countLabel="papers">
             {papers.map((paper, i) => (
               <a
@@ -77,20 +77,20 @@ export default function ProjectsPage() {
                 href={paper.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex-none w-[260px] border border-[#1a1a1a] bg-[#0e0e0e] hover:border-[#2a2a2a] transition-colors p-5 flex flex-col justify-between min-h-[180px]"
+                className="group flex-none w-[260px] border border-[#e5e5e5] bg-[#f0f0f0] hover:border-[#d8d8d8] transition-colors p-5 flex flex-col justify-between min-h-[180px]"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[#444444]">
+                    <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[#999999]">
                       Research
                     </span>
-                    <span className="font-mono text-[0.55rem] text-[#333333]">{paper.year}</span>
+                    <span className="font-mono text-[0.55rem] text-[#aaaaaa]">{paper.year}</span>
                   </div>
                   <p className="text-[0.9375rem] leading-snug group-hover:underline underline-offset-[3px]">
                     {paper.title}
                   </p>
                 </div>
-                <p className="font-mono text-[0.6rem] uppercase tracking-widest text-[#444444] mt-4">
+                <p className="font-mono text-[0.6rem] uppercase tracking-widest text-[#999999] mt-4">
                   {paper.venue}
                 </p>
               </a>
@@ -103,27 +103,27 @@ export default function ProjectsPage() {
       <section>
         <div className="mb-3">
           <h2 className="text-2xl font-normal leading-tight">Technical Projects</h2>
-          <p className="font-mono text-[0.75rem] text-[#555555] mt-1 italic">
+          <p className="font-mono text-[0.75rem] text-[#888888] mt-1 italic">
             Experiments, hackathon projects, and other fun stuff I've built.
           </p>
         </div>
 
-        <div className="border-t border-[#1a1a1a] pt-6">
+        <div className="border-t border-[#e5e5e5] pt-6">
           <ScrollCarousel count={projects.length} countLabel="projects">
             {projects.map((project, i) => (
               <div
                 key={i}
-                className="flex-none w-[260px] border border-[#1a1a1a] bg-[#0e0e0e] p-5 flex flex-col justify-between min-h-[200px]"
+                className="flex-none w-[260px] border border-[#e5e5e5] bg-[#f0f0f0] p-5 flex flex-col justify-between min-h-[200px]"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[#444444]">
+                    <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[#999999]">
                       Technical
                     </span>
-                    <span className="font-mono text-[0.55rem] text-[#333333]">{project.year}</span>
+                    <span className="font-mono text-[0.55rem] text-[#aaaaaa]">{project.year}</span>
                   </div>
                   <p className="text-[0.9375rem] leading-snug font-normal">{project.name}</p>
-                  <p className="text-[0.8125rem] text-[#555555] leading-relaxed mt-2">
+                  <p className="text-[0.8125rem] text-[#888888] leading-relaxed mt-2">
                     {project.description}
                   </p>
                 </div>
@@ -134,7 +134,7 @@ export default function ProjectsPage() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-mono text-[0.6rem] uppercase tracking-widest text-[#444444] hover:text-[#efefef] transition-colors"
+                      className="font-mono text-[0.6rem] uppercase tracking-widest text-[#999999] hover:text-[#111111] transition-colors"
                     >
                       {link.label} ↗
                     </a>

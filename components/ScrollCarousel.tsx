@@ -41,11 +41,11 @@ export default function ScrollCarousel({ children, count, countLabel }: {
       >
         {children}
       </div>
-      <div className="flex items-center justify-between border-t border-[#1a1a1a] pt-3">
-        <span className="font-mono text-[0.6rem] uppercase tracking-widest text-[#444444]">
+      <div className="flex items-center justify-between border-t border-[#e5e5e5] pt-3">
+        <span className="font-mono text-[0.6rem] uppercase tracking-widest text-[#999999]">
           Scroll to explore
         </span>
-        <span className="font-mono text-[0.6rem] uppercase tracking-widest text-[#444444]">
+        <span className="font-mono text-[0.6rem] uppercase tracking-widest text-[#999999]">
           {count} {countLabel}
         </span>
       </div>
