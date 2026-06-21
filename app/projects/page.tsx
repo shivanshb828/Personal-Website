@@ -23,7 +23,16 @@ const projects: { name: string; description: React.ReactNode; year: string; link
       { label: 'GitHub', href: 'http://github.com/shivanshb828/CondAptNet' },
     ],
   },
-  
+
+  {
+    name: 'Donna',
+    description: 'A fully local voice AI for legal client intake, built for the Dell × NVIDIA hackathon. Donna answers inbound calls via Twilio, runs phase-gated intake over voice, OCR-scans documents, books consultations, and emails summaries to the lawyer — all on a Dell GB10 with no cloud dependencies.',
+    year: '2025',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/shivanshb828/donna-personal-assistant' },
+    ],
+  },
+
   {
     name: 'Snoopy AI',
     description: 'An AI phone agent built for small owner-operated businesses (like dry cleaners or salons). It answers calls 24/7, handles orders and customer inquiries in real time, and syncs everything to the owner\'s Notion workspace.',
