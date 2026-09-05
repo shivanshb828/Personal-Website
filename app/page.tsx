@@ -10,10 +10,7 @@ export default function HomePage() {
         <p className="font-mono text-sm tracking-widest text-[#aaaaaa] mt-1 uppercase">
           CS + Bioinformatics, UCLA
         </p>
-        <p className="text-lg leading-[1.8] mt-8 max-w-lg">
-          Most recently, I'm building ML frameworks at <a href="https://continuity.bio" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-[#aaaaaa] hover:decoration-[#111111] transition-colors">Continuity Technologies</a>. Previously, I was interning at Flair Labs (YC S22), working on AI Agents to automate lead capture and loan origination.
-        </p>
-        <p className="text-lg leading-[1.8] mt-4 max-w-lg text-[#555555]">
+        <p className="text-lg leading-[1.8] mt-8 max-w-lg text-[#555555]">
           I'm interested in frontier AI research, and especially its applications to healthcare and hardware. I like to talk about theory, but simultaneously build intelligent products for everyday life.
         </p>
         <div className="flex items-center gap-5 mt-8">
@@ -32,6 +29,50 @@ export default function HomePage() {
             >
               [{link.label}]
             </a>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#666666] mb-8 uppercase">
+          / experience
+        </h2>
+        <div className="relative border-l border-[#e0e0e0] ml-1 space-y-10">
+          {[
+            {
+              company: 'Continuity Technologies',
+              href: 'https://continuity.bio',
+              role: 'ML Engineer',
+              description: 'Building ML frameworks for biological data.',
+            },
+            {
+              company: 'Flair Labs',
+              href: null,
+              role: 'Software Engineer Intern · YC S22',
+              description: 'Worked on AI Agents to automate lead capture and loan origination.',
+            },
+          ].map((item) => (
+            <div key={item.company} className="relative pl-8">
+              <span className="absolute -left-[5px] top-[6px] w-2.5 h-2.5 rounded-full border-2 border-[#bbbbbb] bg-white" />
+              <p className="font-mono text-[0.7rem] tracking-widest uppercase text-[#888888] mb-1">
+                {item.role}
+              </p>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base font-normal text-[#111111] underline underline-offset-2 decoration-[#cccccc] hover:decoration-[#111111] transition-colors"
+                >
+                  {item.company}
+                </a>
+              ) : (
+                <p className="text-base font-normal text-[#111111]">{item.company}</p>
+              )}
+              <p className="text-[0.9375rem] leading-[1.7] text-[#555555] mt-1 max-w-md">
+                {item.description}
+              </p>
+            </div>
           ))}
         </div>
       </section>
