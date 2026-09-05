@@ -4,10 +4,10 @@ export default function HomePage() {
     <div className="space-y-20">
       <section className="pt-6">
         <h1 className="text-5xl leading-[1.1] font-normal">Shivansh Bansal</h1>
-        <p className="font-mono text-xs tracking-widest text-[#777777] mt-4 uppercase">
+        <p className="font-mono text-sm tracking-widest text-[#777777] mt-4 uppercase">
           Machine Learning Engineer (Applied AI) — San Francisco, CA
         </p>
-        <p className="font-mono text-xs tracking-widest text-[#aaaaaa] mt-1 uppercase">
+        <p className="font-mono text-sm tracking-widest text-[#aaaaaa] mt-1 uppercase">
           CS + Bioinformatics, UCLA
         </p>
         <p className="text-lg leading-[1.8] mt-8 max-w-lg">
