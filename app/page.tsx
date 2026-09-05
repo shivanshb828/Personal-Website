@@ -6,9 +6,10 @@ export default function HomePage() {
         <h1 className="text-5xl leading-[1.1] font-normal">Shivansh Bansal</h1>
         <p className="font-mono text-xs tracking-widest text-[#777777] mt-4 uppercase">
           Machine Learning Engineer (Applied AI) — San Francisco, CA
+          CS + Bioinformatics at UCLA
         </p>
         <p className="text-lg leading-[1.8] mt-8 max-w-lg">
-          I currently study CS + Bioinformatics at UCLA. Most recently, I'm building ML frameworks at <a href="https://continuity.bio" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-[#aaaaaa] hover:decoration-[#111111] transition-colors">Continuity Technologies</a>. Previously, I was interning at Flair Labs (YC S22), working on AI Agents to automate lead capture and loan origination.
+          Most recently, I'm building ML frameworks at <a href="https://continuity.bio" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-[#aaaaaa] hover:decoration-[#111111] transition-colors">Continuity Technologies</a>. Previously, I was interning at Flair Labs (YC S22), working on AI Agents to automate lead capture and loan origination.
         </p>
         <p className="text-lg leading-[1.8] mt-4 max-w-lg text-[#555555]">
           I'm interested in frontier AI research, and especially its applications to healthcare and hardware. I like to talk about theory, but simultaneously build intelligent products for everyday life.
