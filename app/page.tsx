@@ -6,7 +6,9 @@ export default function HomePage() {
         <h1 className="text-5xl leading-[1.1] font-normal">Shivansh Bansal</h1>
         <p className="font-mono text-xs tracking-widest text-[#777777] mt-4 uppercase">
           Machine Learning Engineer (Applied AI) — San Francisco, CA
-          CS + Bioinformatics at UCLA
+        </p>
+        <p className="font-mono text-xs tracking-widest text-[#aaaaaa] mt-1 uppercase">
+          CS + Bioinformatics, UCLA
         </p>
         <p className="text-lg leading-[1.8] mt-8 max-w-lg">
           Most recently, I'm building ML frameworks at <a href="https://continuity.bio" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-[#aaaaaa] hover:decoration-[#111111] transition-colors">Continuity Technologies</a>. Previously, I was interning at Flair Labs (YC S22), working on AI Agents to automate lead capture and loan origination.
