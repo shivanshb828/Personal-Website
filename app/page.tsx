@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function HomePage() {
 
   return (
@@ -35,42 +33,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section>
-        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#666666] mb-6">
-          / projects
-        </h2>
-        <p className="text-[1.0625rem] leading-[1.8] text-[#444444] max-w-lg">
-          Researching the application of machine learning for drug and aptamer discovery, while also building productivity tools like AI Voice Agents.  
-        </p>
-        <Link
-          href="/projects"
-          className="font-mono text-[0.65rem] tracking-widest text-[#777777] hover:text-[#111111] transition-colors mt-5 inline-block"
-        >
-          all projects →
-        </Link>
-      </section>
-
-      <section>
-        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#666666] mb-4">
-          / subscribe
-        </h2>
-        <p className="font-mono text-xs text-[#777777] mb-4">
-          New essays, occasionally.
-        </p>
-        <form className="flex gap-0 max-w-sm">
-          <input
-            type="email"
-            placeholder="your@email.com"
-            className="flex-1 border-b border-[#d5d5d5] bg-transparent px-0 py-2 text-sm font-mono text-[#111111] placeholder-[#aaaaaa] focus:outline-none focus:border-[#888888] transition-colors"
-          />
-          <button
-            type="submit"
-            className="font-mono text-xs tracking-widest uppercase text-[#777777] hover:text-[#111111] transition-colors ml-6 shrink-0"
-          >
-            Subscribe →
-          </button>
-        </form>
-      </section>
     </div>
   )
 }
