@@ -1,7 +1,7 @@
 export default function HomePage() {
 
   return (
-    <div className="space-y-20">
+    <div className="space-y-12">
       <section className="pt-6">
         <h1 className="text-5xl leading-[1.1] font-normal">Shivansh Bansal</h1>
         <p className="font-mono text-sm tracking-widest text-[#777777] mt-4 uppercase">
@@ -10,7 +10,7 @@ export default function HomePage() {
         <p className="font-mono text-sm tracking-widest text-[#aaaaaa] mt-1 uppercase">
           CS + Bioinformatics, UCLA
         </p>
-        <p className="text-lg leading-[1.8] mt-8 max-w-lg text-[#555555]">
+        <p className="text-lg leading-[1.8] mt-8 text-[#555555]">
           Building intelligent products at the intersection of healthcare and hardware.
         </p>
         <div className="flex items-center gap-5 mt-8">
