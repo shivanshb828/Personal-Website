@@ -11,7 +11,7 @@ export default function HomePage() {
           CS + Bioinformatics, UCLA
         </p>
         <p className="text-lg leading-[1.8] mt-8 max-w-lg text-[#555555]">
-          I'm interested in frontier AI research, and especially its applications to healthcare and hardware. I like to talk about theory, but simultaneously build intelligent products for everyday life.
+          Building intelligent products at the intersection of healthcare and hardware.
         </p>
         <div className="flex items-center gap-5 mt-8">
           {[
@@ -42,13 +42,13 @@ export default function HomePage() {
             {
               company: 'Continuity Technologies',
               href: 'https://continuity.bio',
-              role: 'ML Engineer',
+              role: 'Machine Learning Engineer',
               description: 'Building ML frameworks for biological data.',
             },
             {
-              company: 'Flair Labs',
+              company: 'Flair Labs (YC S22)',
               href: null,
-              role: 'Software Engineer Intern · YC S22',
+              role: 'AI Research Engineer',
               description: 'Worked on AI Agents to automate lead capture and loan origination.',
             },
           ].map((item) => (
