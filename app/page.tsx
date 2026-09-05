@@ -37,13 +37,6 @@ export default function HomePage() {
 
       <section>
         <h2 className="font-mono text-[0.65rem] tracking-widest text-[#666666] mb-6">
-          / writing
-        </h2>
-        <p className="font-mono text-xs text-[#777777] tracking-widest uppercase">Coming soon...</p>
-      </section>
-
-      <section>
-        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#666666] mb-6">
           / projects
         </h2>
         <p className="text-[1.0625rem] leading-[1.8] text-[#444444] max-w-lg">
