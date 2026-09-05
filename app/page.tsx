@@ -13,14 +13,9 @@ export default function HomePage() {
         <p className="text-lg leading-[1.8] mt-8 text-[#555555]">
           Building intelligent products at the intersection of healthcare and hardware.
         </p>
-        <a
-          href="mailto:shivanshb@ucla.edu"
-          className="font-mono text-sm text-[#888888] hover:text-[#111111] transition-colors mt-3 inline-block"
-        >
-          shivanshb@ucla.edu
-        </a>
         <div className="flex items-center gap-5 mt-8">
           {[
+            { label: 'Email', href: 'mailto:shivanshb@ucla.edu' },
             { label: 'LinkedIn', href: 'https://linkedin.com/in/shivansh~bansal' },
             { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=shivanshbansal' },
             { label: 'Twitter', href: 'https://twitter.com/shivanshb2008' },
