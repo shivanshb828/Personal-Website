@@ -188,6 +188,22 @@ export const projects: Project[] = [
     links: [{ label: 'Code', href: 'https://github.com/shivanshb828/daytona-hack' }],
   },
   {
+    name: 'Helix',
+    date: 'Jul 2026',
+    award: '1st Place ×2 (Best Use of Zero.xyz, Best Use of Pomerium) · Loop Engineering Hackathon, Cursor × AWS',
+    description:
+      'An ML agent that trains a heart-disease classifier with no human in the loop. It plans, trains, checks itself against published UCI benchmarks, then diagnoses what went wrong and fixes it. A fix might mean pulling more data, buying enrichment through Zero.xyz, or switching model class, all behind Pomerium spend limits.',
+    links: [{ label: 'Code', href: 'https://github.com/shivanshb828/Machine-Learning-Loop' }],
+  },
+  {
+    name: 'Discordance',
+    date: 'Jul 2026',
+    award: '2nd Place · Rewiring Biology Hackathon, Owkin × AWS',
+    description:
+      'A knowledge graph of olfactory receptors in cancer, served as MCP tools for Owkin K Pro. When sources disagree, it flags the contradiction instead of blending them into one hedged answer. It weights evidence by strength and asks the researcher when it can’t settle a conflict.',
+    links: [{ label: 'Code', href: 'https://github.com/shivanshb828/discordance' }],
+  },
+  {
     name: 'TriageDesk',
     date: 'Jul 2026',
     award: '2nd Place · “Can Your Agent-Written Code Survive Production?” by Reboot.dev',
@@ -218,15 +234,20 @@ export const projects: Project[] = [
       'A phone agent for dry cleaners and other owner-run shops. Customers call to place or check orders, and owners call for a rundown of the day. Every change syncs to Notion in real time.',
     links: [{ label: 'Code', href: 'https://github.com/shivanshb828/dry-cleaning-voice-agent' }],
   },
+  {
+    name: 'Morty',
+    date: 'May 2026',
+    award: '1st Place · SF Voice AI Meetup Hackathon, AssemblyAI',
+    description:
+      'A voice agent for nail salons. Customers call to book, change or cancel appointments and check prices. Owners manage the schedule by voice, and the agent places reminder calls the day before each appointment.',
+    links: [{ label: 'Code', href: 'https://github.com/shivanshb828/assemblyai-voice-agent' }],
+  },
 ]
 
 // Hackathon placements not already attached to a project above.
 export const otherHackathons: string[] = [
   '1st Place — OpenAI Codex Community Hackathon',
   '1st Place — AI-Native Hackathon, UC Berkeley IEEE (Best Use of Retell AI)',
-  '1st Place ×2 — Loop Engineering Hackathon, Cursor × AWS (Best Use of Zero.xyz, Best Use of Pomerium)',
   '1st Place — AI Revenue Hackathon, AGI House (Best Consumer Product)',
-  '1st Place — SF Voice AI Meetup Hackathon, AssemblyAI',
-  '2nd Place — Rewiring Biology Hackathon, Owkin × AWS',
   'Top 8 — America’s Next Top Model, Vercel',
 ]
