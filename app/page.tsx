@@ -12,15 +12,15 @@ export default function HomePage() {
       <h1 className="text-4xl font-medium tracking-tight">{site.name}</h1>
 
       <p className="mt-10">
-        I&apos;m studying Computer Science with a minor in Bioinformatics at UCLA. I like building where machine
-        learning meets biology, and more and more, hardware.
+        I&apos;m studying Computer Science with a minor in Bioinformatics at UCLA. My main interests right now are
+        biology, machine learning, hardware, and AI safety.
       </p>
       <p className="mt-4">
         Right now I&apos;m an Associate Analyst at Bruin Ventures.
       </p>
       <p className="mt-4">
-        I have <Link href="/experience#experience-graph">experience</Link> across biological ML, applied AI, venture,
-        and education policy. I do <Link href="/research">research</Link> on drug discovery and on whether frontier
+        I have <Link href="/experience#experience-graph">experience</Link> across biological ML, applied AI, and
+        venture. I do <Link href="/research">research</Link> on drug discovery and on whether frontier
         models can make the judgment calls scientists make.
       </p>
       <p className="mt-4">
@@ -49,8 +49,7 @@ export default function HomePage() {
           <li>Completed BlueDot Impact&apos;s Technical AI Safety course</li>
         </ul>
         <p className="mt-4">
-          Beyond what&apos;s here, I&apos;m drawn to hardware design, nanotechnology, medical engineering, and drug
-          delivery.
+          Beyond my main interests, I&apos;m also drawn to nanotechnology, medical engineering, and drug delivery.
         </p>
 
         <div className="mt-10 border-t border-dashed border-rule pt-6">

@@ -3,7 +3,7 @@
 export const site = {
   name: 'Shivansh Bansal',
   url: 'https://www.shivanshbansal.com',
-  description: 'CS + Bioinformatics at UCLA. Machine learning, biology, and hardware.',
+  description: 'CS + Bioinformatics at UCLA. Biology, machine learning, hardware, and AI safety.',
   lastUpdated: 'November 4th, 2026',
 }
 
@@ -62,8 +62,8 @@ export const experience: ExperienceNode[] = [
   {
     id: 'ai',
     label: 'Applied AI',
-    x: 0.18,
-    y: 0.5,
+    x: 0.17,
+    y: 0.84,
     roles: [
       {
         org: 'Flair Labs (YC S22)',
@@ -77,8 +77,8 @@ export const experience: ExperienceNode[] = [
   {
     id: 'venture',
     label: 'Venture',
-    x: 0.82,
-    y: 0.5,
+    x: 0.83,
+    y: 0.84,
     roles: [
       {
         org: 'Bruin Ventures',
@@ -89,40 +89,13 @@ export const experience: ExperienceNode[] = [
       },
     ],
   },
-  {
-    id: 'policy',
-    label: 'Education & Policy',
-    x: 0.5,
-    y: 0.86,
-    roles: [
-      {
-        org: 'United Nations',
-        title: 'Data Researcher',
-        dates: 'Sep 2023 — Mar 2026',
-        description:
-          'Built GEIMS, a monitoring system for educational inequality across 60+ countries, joining UNESCO, World Bank and national census data.',
-        links: [
-          { label: 'Live', href: 'https://unesco-geims.org/' },
-          { label: 'Code', href: 'https://github.com/shivanshb828/geims' },
-        ],
-      },
-      {
-        org: 'Project Catalyst',
-        title: 'Founder & Executive Director · Nonprofit',
-        dates: 'Founded in high school',
-        description:
-          'A STEM education nonprofit, started in high school, that has reached 10,000+ students across three continents with hands-on engineering and biotech curricula.',
-      },
-    ],
-  },
 ]
 
 // Edges between experience nodes (by id).
 export const experienceEdges: [string, string][] = [
   ['ml', 'ai'],
   ['ml', 'venture'],
-  ['ai', 'policy'],
-  ['venture', 'policy'],
+  ['ai', 'venture'],
 ]
 
 // ---------------------------------------------------------------------------
