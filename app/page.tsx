@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import AboutDropdown from '@/components/AboutDropdown'
 import Icon from '@/components/Icons'
@@ -12,7 +13,16 @@ export default function HomePage() {
       <h1 className="text-4xl font-medium tracking-tight">{site.name}</h1>
 
       <p className="mt-10">
-        I&apos;m studying Computer Science and Bioinformatics at UCLA. I like building where biology, machine
+        I&apos;m studying Computer Science and Bioinformatics at{' '}
+        <Image
+          src="/ucla-bruins.svg"
+          alt="UCLA"
+          width={156}
+          height={116}
+          unoptimized
+          className="inline-block h-[1.9em] w-auto align-[-0.6em]"
+        />
+        . I like building where biology, machine
         learning, and hardware meet.
       </p>
       <p className="mt-4">
