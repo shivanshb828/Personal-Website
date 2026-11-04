@@ -86,6 +86,17 @@ export default function ExperienceGraph({
     }
   }
 
+  // Open a node from the URL hash, e.g. /experience#research.
+  useEffect(() => {
+    const openFromHash = () => {
+      const id = window.location.hash.slice(1)
+      if (nodes.some((n) => n.id === id)) setActive(id)
+    }
+    openFromHash()
+    window.addEventListener('hashchange', openFromHash)
+    return () => window.removeEventListener('hashchange', openFromHash)
+  }, [nodes])
+
   useEffect(() => {
     if (!active) return
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches

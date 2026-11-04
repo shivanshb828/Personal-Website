@@ -12,20 +12,20 @@ export default function HomePage() {
       <h1 className="text-4xl font-medium tracking-tight">{site.name}</h1>
 
       <p className="mt-10">
-        I&apos;m studying Computer Science with a minor in Bioinformatics at UCLA. My main interests right now are
-        biology, machine learning, hardware, and AI safety.
+        I&apos;m studying Computer Science and Bioinformatics at UCLA. I like building where biology, machine
+        learning, and hardware meet.
       </p>
       <p className="mt-4">
-        Right now I&apos;m an Associate Analyst at Bruin Ventures.
+        I&apos;m currently focused on two questions: how to get machine learning to do real science, and how to tell
+        when we can trust it.
       </p>
       <p className="mt-4">
-        I have <Link href="/experience#experience-graph">experience</Link> across biological ML, applied AI, and
-        venture. I do <Link href="/research">research</Link> on drug discovery and on whether frontier
-        models can make the judgment calls scientists make.
+        I have experience across <Link href="/experience#building">building</Link>,{' '}
+        <Link href="/experience#research">research</Link>, and <Link href="/experience#safety">AI safety</Link>, from
+        biosensor models and voice agents to cancer drug targets and evaluations of frontier models.
       </p>
       <p className="mt-4">
-        I spend a lot of weekends at hackathons, and some of those <Link href="/projects">projects</Link> have done
-        well.
+        Most weekends I&apos;m at a <Link href="/projects">hackathon</Link>.
         {hasWriting && (
           <>
             {' '}
@@ -36,20 +36,30 @@ export default function HomePage() {
 
       <AboutDropdown>
         <p>
-          I grew up in Dublin, California, where I spent most of high school on research and science fairs. At UCLA
-          I&apos;m involved with Bruin AI Safety and CruX.
+          I grew up in Dublin, California. I got into computational biology in high school, and it has pulled me
+          toward everything around it since: the models, the hardware they run on, and whether we can trust them.
         </p>
-        <p className="mt-4">A few things from along the way:</p>
+        <p className="mt-4">
+          At UCLA I&apos;m an Associate Analyst at Bruin Ventures, the university&apos;s premier venture capital and
+          startup club, where I help source clients, work on deals, and learn the startup cycle from the inside.
+          I&apos;m also part of CruX. I previously:
+        </p>
         <ul className="mt-4 list-disc space-y-3 pl-6">
           <li>
-            2nd Place in Computational Biology &amp; Bioinformatics at ISEF 2025 (Regeneron / Society for Science), for
-            work on olfactory receptors in cancer
+            Founded Project Catalyst, a STEM education nonprofit, in high school. It has reached 10,000+ students
+            across three continents with hands-on engineering and biotech curricula.
           </li>
-          <li>USA Computing Olympiad, Gold Division</li>
-          <li>Completed BlueDot Impact&apos;s Technical AI Safety course</li>
+          <li>
+            Won 11 hackathon prizes for everything from voice agents to self-improving ML agents (see{' '}
+            <Link href="/projects">projects</Link>)
+          </li>
+          <li>Reached the Gold Division of the USA Computing Olympiad</li>
         </ul>
         <p className="mt-4">
-          Beyond my main interests, I&apos;m also drawn to nanotechnology, medical engineering, and drug delivery.
+          I think biology is becoming an engineering discipline, and machine learning is a big part of why. I want to
+          build the tools that make that happen, from the models down to the hardware, and make sure they&apos;re
+          trustworthy before a lab, a clinic, or a patient depends on them. Along the way I&apos;m drawn to
+          nanotechnology, medical engineering, and drug delivery.
         </p>
 
         <div className="mt-10 border-t border-dashed border-rule pt-6">

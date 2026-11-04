@@ -3,7 +3,7 @@
 export const site = {
   name: 'Shivansh Bansal',
   url: 'https://www.shivanshbansal.com',
-  description: 'CS + Bioinformatics at UCLA. Biology, machine learning, hardware, and AI safety.',
+  description: 'CS + Bioinformatics at UCLA. Building at the intersection of biology, machine learning, hardware, and AI safety.',
   lastUpdated: 'November 4th, 2026',
 }
 
@@ -43,8 +43,8 @@ export type ExperienceNode = {
 
 export const experience: ExperienceNode[] = [
   {
-    id: 'ml',
-    label: 'Machine Learning',
+    id: 'building',
+    label: 'Building',
     x: 0.5,
     y: 0.14,
     roles: [
@@ -57,14 +57,6 @@ export const experience: ExperienceNode[] = [
           'Built CondAptNet, a 45.5M-parameter model that predicts how tightly a DNA aptamer binds a protein, and how that shifts with pH, salt, temperature and Mg²⁺. It pairs a custom nucleotide encoder with LoRA-tuned ESM-2 for Continuity’s biosensors.',
         links: [{ label: 'Code', href: 'https://github.com/shivanshb828/CondAptNet' }],
       },
-    ],
-  },
-  {
-    id: 'ai',
-    label: 'Applied AI',
-    x: 0.17,
-    y: 0.84,
-    roles: [
       {
         org: 'Flair Labs (YC S22)',
         title: 'Applied AI Engineer · Internship',
@@ -72,20 +64,85 @@ export const experience: ExperienceNode[] = [
         description:
           'Led a three-person team building the voice and SMS agents behind a lead-capture and loan-origination pipeline for national mortgage lenders, with compliance gating for regulated outreach.',
       },
+      {
+        org: 'United Nations',
+        title: 'Data Researcher',
+        dates: 'Sep 2023 — Mar 2026',
+        description:
+          'Built and deployed GEIMS, a system that tracks educational inequality across 60+ countries by joining UNESCO, World Bank and national census data.',
+        links: [
+          { label: 'Live', href: 'https://unesco-geims.org/' },
+          { label: 'Code', href: 'https://github.com/shivanshb828/geims' },
+        ],
+      },
     ],
   },
   {
-    id: 'venture',
-    label: 'Venture',
+    id: 'research',
+    label: 'Research',
+    x: 0.17,
+    y: 0.84,
+    roles: [
+      {
+        org: 'Olfactory Receptors & Cancer',
+        orgHref: 'https://www.researchsquare.com/article/rs-6950845/v1',
+        title: 'First author · Research Square preprint',
+        dates: 'Mar 2024 — Jan 2026',
+        description:
+          'A multi-stage machine learning and virtual screening pipeline that narrowed 1.4 million compounds to four candidates against olfactory receptors expressed in prostate cancer. The top candidates were validated with dual-luciferase assays at Stanford.',
+        links: [
+          { label: 'Paper', href: 'https://www.researchsquare.com/article/rs-6950845/v1' },
+          { label: 'Code', href: 'https://github.com/shivanshb828/olfdrugdiscovery-2' },
+        ],
+      },
+      {
+        org: 'International Science and Engineering Fair',
+        title: '2nd Place, Computational Biology & Bioinformatics · Regeneron / Society for Science',
+        dates: 'May 2025',
+      },
+      {
+        org: 'ISMB 2025',
+        title: 'Presenter · Intelligent Systems for Molecular Biology, Liverpool',
+        dates: 'Jul 2025',
+      },
+      {
+        org: 'Stanford Drug Discovery Symposium',
+        title: 'Presenter · 9th annual',
+        dates: 'Apr 2025',
+      },
+      {
+        org: 'RECOMB 2025',
+        title: 'Presenter · 29th Research in Computational Molecular Biology',
+        dates: 'Apr 2025',
+      },
+    ],
+  },
+  {
+    id: 'safety',
+    label: 'AI Safety',
     x: 0.83,
     y: 0.84,
     roles: [
       {
-        org: 'Bruin Ventures',
-        title: 'Associate Analyst',
-        dates: 'Oct 2026 — present',
+        org: 'Benchmarking LLM Scientific Judgment',
+        title: 'Independent research',
+        dates: 'Jul 2026 — Sep 2026',
         description:
-          'UCLA’s premier venture capital and startup club. Sourcing clients, working on deals, and learning the venture and startup cycle from the inside.',
+          'Can frontier models tell when two bioactivity measurements are safe to pool? A preregistered benchmark from 5,300 paired ChEMBL measurements, with values hidden from the model. Claude Opus 4.6 and GPT-5.6 Sol both scored below a structure-only baseline, and both merged more incomparable pairs once shown assay descriptions. Includes contamination probes and leakage gates.',
+        links: [
+          { label: 'Code', href: 'https://github.com/shivanshb828/bio-benchmark-pilot' },
+          { label: 'Findings', href: 'https://github.com/shivanshb828/bio-benchmark-pilot/blob/main/results/FINDINGS.md' },
+        ],
+      },
+      {
+        org: 'BlueDot Impact',
+        title: 'Technical AI Safety course',
+        dates: 'Nov 2026',
+      },
+      {
+        org: 'Bruin AI Safety',
+        title: 'Member · UCLA',
+        dates: '',
       },
     ],
   },
@@ -93,46 +150,9 @@ export const experience: ExperienceNode[] = [
 
 // Edges between experience nodes (by id).
 export const experienceEdges: [string, string][] = [
-  ['ml', 'ai'],
-  ['ml', 'venture'],
-  ['ai', 'venture'],
-]
-
-// ---------------------------------------------------------------------------
-// Research
-// ---------------------------------------------------------------------------
-
-export type Paper = {
-  title: string
-  meta: string
-  description: string
-  presented?: string
-  links: Link[]
-}
-
-export const research: Paper[] = [
-  {
-    title: 'Can LLMs tell when bioactivity data can be pooled?',
-    meta: 'Independent research · Jul — Sep 2026',
-    description:
-      'A preregistered benchmark built from 5,300 paired ChEMBL measurements. With the measured values hidden, Claude Opus 4.6 and GPT-5.6 Sol judged whether 168 assay pairs were commensurable. Both scored below a structure-only random-forest baseline, and both merged more incomparable pairs once they were shown assay descriptions.',
-    links: [
-      { label: 'Code', href: 'https://github.com/shivanshb828/bio-benchmark-pilot' },
-      { label: 'Findings', href: 'https://github.com/shivanshb828/bio-benchmark-pilot/blob/main/results/FINDINGS.md' },
-    ],
-  },
-  {
-    title:
-      'Allosteric Regulation of Ectopically Expressed Olfactory Receptors in Tumor Cells: Ligand-Receptor Topology and Machine Learning-Assisted Drug Discovery',
-    meta: 'First author · Research Square preprint · 2025',
-    description:
-      'A multi-stage machine learning and virtual screening pipeline that narrowed 1.4 million compounds to four candidates against olfactory receptors expressed in prostate cancer. The top candidates were then validated with dual-luciferase assays at Stanford.',
-    presented: 'RECOMB 2025 · ISMB 2025 · 9th Stanford Drug Discovery Symposium',
-    links: [
-      { label: 'Paper', href: 'https://www.researchsquare.com/article/rs-6950845/v1' },
-      { label: 'Code', href: 'https://github.com/shivanshb828/olfdrugdiscovery-2' },
-    ],
-  },
+  ['building', 'research'],
+  ['building', 'safety'],
+  ['research', 'safety'],
 ]
 
 // ---------------------------------------------------------------------------

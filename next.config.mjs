@@ -4,6 +4,10 @@ const config = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    // Research now lives in the experience graph.
+    return [{ source: '/research', destination: '/experience#research', permanent: false }]
+  },
 }
 
 export default config
