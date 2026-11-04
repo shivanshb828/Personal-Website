@@ -84,6 +84,8 @@ export const experience: ExperienceNode[] = [
         org: 'Bruin Ventures',
         title: 'Associate Analyst',
         dates: 'Oct 2026 — present',
+        description:
+          'UCLA’s premier venture capital and startup club. Sourcing clients, working on deals, and learning the venture and startup cycle from the inside.',
       },
     ],
   },
@@ -106,10 +108,10 @@ export const experience: ExperienceNode[] = [
       },
       {
         org: 'Project Catalyst',
-        title: 'Executive Director · Volunteer',
-        dates: '',
+        title: 'Founder & Executive Director · Nonprofit',
+        dates: 'Founded in high school',
         description:
-          'Founded a STEM education initiative that has reached 10,000+ students across three continents with hands-on engineering and biotech curricula.',
+          'A STEM education nonprofit, started in high school, that has reached 10,000+ students across three continents with hands-on engineering and biotech curricula.',
       },
     ],
   },
@@ -229,7 +231,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Snoopy',
-    date: '2026',
+    date: 'May 2026',
     award: '2nd Place ($23,000) · Notion Developer Platform Hackathon',
     description:
       'A phone agent for dry cleaners and other owner-run shops. Customers call to place or check orders, and owners call for a rundown of the day. Every change syncs to Notion in real time.',
