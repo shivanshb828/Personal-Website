@@ -2,6 +2,7 @@
 
 export const site = {
   name: 'Shivansh Bansal',
+  url: 'https://www.shivanshbansal.com',
   description: 'CS + Bioinformatics at UCLA. Machine learning, biology, and hardware.',
   lastUpdated: 'November 4th, 2026',
 }

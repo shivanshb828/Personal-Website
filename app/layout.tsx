@@ -11,8 +11,17 @@ const plexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: { default: site.name, template: `%s — ${site.name}` },
   description: site.description,
+  openGraph: {
+    title: site.name,
+    description: site.description,
+    url: site.url,
+    siteName: site.name,
+    type: 'website',
+  },
+  twitter: { card: 'summary', title: site.name, description: site.description },
 }
 
 const sideGutter = { width: 'max(0px, calc((100vw - min(100vw, 44rem)) / 2))' }

@@ -87,7 +87,9 @@ export default function ExperienceGraph({
   }
 
   useEffect(() => {
-    if (active) panelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+    if (!active) return
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    panelRef.current?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' })
   }, [active])
 
   const activeNode = nodes.find((n) => n.id === active)
@@ -97,7 +99,7 @@ export default function ExperienceGraph({
     <div id="experience-graph" className="w-full space-y-4">
       <div
         ref={frameRef}
-        className="relative w-full touch-none select-none rounded-sm border border-dashed border-rule bg-surface"
+        className="relative w-full select-none rounded-sm border border-dashed border-rule bg-surface"
         style={{ minHeight: 420, height: 'min(52vh, 480px)' }}
       >
         {ready && (
@@ -134,7 +136,7 @@ export default function ExperienceGraph({
                 onPointerUp={onPointerUp}
                 onPointerCancel={() => (drag.current = null)}
                 onKeyDown={onKeyToggle(n.id)}
-                className={`flex max-w-[11rem] cursor-grab items-center justify-center border border-ink bg-paper px-3 py-2.5 text-center text-[12px] font-medium leading-snug transition-shadow hover:shadow-sm active:cursor-grabbing ${
+                className={`flex max-w-[11rem] cursor-grab touch-none items-center justify-center border border-ink bg-paper px-3 py-2.5 text-center text-[12px] font-medium leading-snug transition-shadow hover:shadow-sm active:cursor-grabbing ${
                   isActive ? 'outline outline-1 outline-offset-2 outline-ink' : ''
                 }`}
               >
