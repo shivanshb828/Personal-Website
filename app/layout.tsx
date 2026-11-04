@@ -1,40 +1,29 @@
 import type { Metadata } from 'next'
-import { EB_Garamond, DM_Mono } from 'next/font/google'
+import { IBM_Plex_Mono } from 'next/font/google'
 import './globals.css'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import { site } from '@/lib/site'
 
-const ebGaramond = EB_Garamond({
+const plexMono = IBM_Plex_Mono({
   subsets: ['latin'],
-  variable: '--font-eb-garamond',
-  display: 'swap',
-})
-
-const dmMono = DM_Mono({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-dm-mono',
+  weight: ['400', '500'],
+  variable: '--font-plex-mono',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'Shivansh Bansal',
-  description: '[Your tagline — researcher, builder, writer.]',
+  title: { default: site.name, template: `%s — ${site.name}` },
+  description: site.description,
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const sideGutter = { width: 'max(0px, calc((100vw - min(100vw, 44rem)) / 2))' }
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${ebGaramond.variable} ${dmMono.variable}`}>
-      <body className="bg-[#fafafa] text-[#111111] font-serif">
-        <Navbar />
-        <main className="max-w-2xl mx-auto px-6 py-14">
-          {children}
-        </main>
-        <Footer />
+    <html lang="en" className={`${plexMono.variable} h-full`}>
+      <body className="min-h-full">
+        <div className="dot-grid pointer-events-none fixed inset-y-0 left-0 z-0" style={sideGutter} aria-hidden="true" />
+        <div className="dot-grid pointer-events-none fixed inset-y-0 right-0 z-0" style={sideGutter} aria-hidden="true" />
+        <main className="relative z-10 mx-auto w-full max-w-layout px-6 md:px-8">{children}</main>
       </body>
     </html>
   )

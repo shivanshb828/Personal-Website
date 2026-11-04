@@ -1,42 +1,35 @@
 # shivanshbansal.com
 
-Personal website of Shivansh Bansal — ML engineer, researcher, and builder.
+Personal website of Shivansh Bansal. Next.js 14 (App Router) + Tailwind, deployed on Vercel.
 
-Built with Next.js 14, Tailwind CSS, and MDX. Deployed on Vercel.
+## Editing content
 
-## Stack
+Nearly everything lives in **`lib/site.ts`**:
 
-| | |
-|---|---|
-| Framework | Next.js 14 (App Router) |
-| Styling | Tailwind CSS — no UI libraries |
-| Content | MDX via `next-mdx-remote` |
-| Fonts | EB Garamond (body) · DM Mono (labels/metadata) |
-| Deployment | Vercel (auto-deploys on push to `main`) |
+- `experience`: nodes in the draggable graph on `/experience` and the roles each one opens
+- `experienceEdges`: which nodes are connected
+- `research`: papers and research projects on `/research`
+- `projects` / `otherHackathons`: `/projects`
+- `contact`: email and social links in the home page's "About me" panel
+- `site.lastUpdated`: the date shown at the bottom of the home page
 
-## Project structure
+The intro paragraphs and the "About me" text are in `app/page.tsx`.
 
+## Writing
+
+Drop an `.mdx` file into `content/`:
+
+```mdx
+---
+title: Your Post Title
+date: 2026-11-04
+description: Optional one-line subtitle.
+---
+
+Your content here...
 ```
-app/
-  page.tsx          # Homepage
-  writing/          # Writing list + individual post pages
-  projects/         # Research papers + technical projects (carousel)
-  stack/            # Tools and gear
-  contact/          # Social links
-  layout.tsx        # Root layout, fonts, nav, footer
-  icon.svg          # Favicon (DNA double helix)
 
-components/
-  Navbar.tsx        # Top nav — links left, name right
-  Footer.tsx        # Minimal footer
-  ScrollCarousel.tsx # Drag-to-scroll card carousel
-
-content/
-  *.mdx             # Blog posts (frontmatter: title, date, tag, description)
-
-lib/
-  mdx.ts            # MDX file loader (getAllPosts, getPost, getAllSlugs)
-```
+`/writing` and the "write" link on the home page only appear once at least one post exists.
 
 ## Running locally
 
@@ -44,30 +37,3 @@ lib/
 npm install
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Adding a blog post
-
-Create a new `.mdx` file in `content/`:
-
-```mdx
----
-title: Your Post Title
-date: 2025-05-23
-tag: essay        # essay | note | research
-description: One-line summary shown in the post list.
----
-
-Your content here...
-```
-
-The post appears automatically in the writing list — no config needed.
-
-## Adding a project or paper
-
-Edit the `projects` or `papers` arrays in [app/projects/page.tsx](app/projects/page.tsx). Descriptions support inline JSX (for links, etc.).
-
-## License
-
-MIT

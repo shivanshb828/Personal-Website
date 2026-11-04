@@ -2,14 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+:root {
+  --paper: #faf9f6;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --ink-muted: #4a4a4a;
+  --rule: #1a1a1a;
+  --rule-soft: rgb(26 26 26 / 0.12);
+  --edge: rgb(26 26 26 / 0.2);
+  --dot: rgb(26 26 26 / 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #141413;
+    --surface: #1c1c1b;
+    --ink: #e8e6e1;
+    --ink-muted: #a9a7a1;
+    --rule: #8a8883;
+    --rule-soft: rgb(232 230 225 / 0.12);
+    --edge: rgb(232 230 225 / 0.25);
+    --dot: rgb(232 230 225 / 0.1);
   }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
+}
+
+:root[data-theme='dark'] {
+  --paper: #141413;
+  --surface: #1c1c1b;
+  --ink: #e8e6e1;
+  --ink-muted: #a9a7a1;
+  --rule: #8a8883;
+  --rule-soft: rgb(232 230 225 / 0.12);
+  --edge: rgb(232 230 225 / 0.25);
+  --dot: rgb(232 230 225 / 0.1);
 }
 
 @layer base {
@@ -18,8 +43,33 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-plex-mono), ui-monospace, Menlo, monospace;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  main a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+
+  main a:hover {
+    opacity: 0.7;
+  }
+
   ::selection {
-    background-color: #111111;
-    color: #fafafa;
+    background-color: var(--ink);
+    color: var(--paper);
+  }
+}
+
+@layer utilities {
+  .dot-grid {
+    background-image: radial-gradient(circle, var(--dot) 1.25px, transparent 2px);
+    background-size: 20px 20px;
   }
 }

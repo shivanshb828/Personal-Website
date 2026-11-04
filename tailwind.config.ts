@@ -9,45 +9,37 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        paper: 'var(--paper)',
+        surface: 'var(--surface)',
+        ink: 'var(--ink)',
+        'ink-muted': 'var(--ink-muted)',
+        rule: 'var(--rule)',
+        'rule-soft': 'var(--rule-soft)',
+      },
       fontFamily: {
-        serif: ['var(--font-eb-garamond)', 'Georgia', 'serif'],
-        mono: ['var(--font-dm-mono)', 'Menlo', 'monospace'],
+        mono: ['var(--font-plex-mono)', 'ui-monospace', 'Menlo', 'monospace'],
+      },
+      maxWidth: {
+        layout: '44rem',
       },
       typography: {
         DEFAULT: {
           css: {
-            fontFamily: 'var(--font-eb-garamond), Georgia, serif',
-            fontSize: '1.125rem',
-            lineHeight: '1.8',
-            color: '#111111',
-            'h1, h2, h3, h4': {
-              fontFamily: 'var(--font-eb-garamond), Georgia, serif',
-              fontWeight: '400',
-              color: '#111111',
-            },
-            a: {
-              color: '#111111',
-              textDecoration: 'underline',
-              textUnderlineOffset: '3px',
-            },
-            code: {
-              fontFamily: 'var(--font-dm-mono), Menlo, monospace',
-              fontSize: '0.875rem',
-              backgroundColor: '#e5e5e5',
-              padding: '0.125rem 0.375rem',
-              borderRadius: '0.125rem',
-              color: '#111111',
-            },
+            '--tw-prose-body': 'var(--ink)',
+            '--tw-prose-headings': 'var(--ink)',
+            '--tw-prose-links': 'var(--ink)',
+            '--tw-prose-bold': 'var(--ink)',
+            '--tw-prose-quotes': 'var(--ink-muted)',
+            '--tw-prose-bullets': 'var(--ink)',
+            '--tw-prose-hr': 'var(--rule)',
+            '--tw-prose-code': 'var(--ink)',
+            fontSize: '14px',
+            lineHeight: '1.75',
+            maxWidth: 'none',
+            'h1, h2, h3, h4': { fontWeight: '500' },
             'code::before': { content: '""' },
             'code::after': { content: '""' },
-            hr: {
-              borderColor: '#222222',
-            },
-            blockquote: {
-              borderLeftColor: '#cccccc',
-              color: '#555555',
-              fontStyle: 'italic',
-            },
           },
         },
       },

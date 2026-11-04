@@ -1,83 +1,86 @@
+import Link from 'next/link'
+import AboutDropdown from '@/components/AboutDropdown'
+import Icon from '@/components/Icons'
+import { contact, site } from '@/lib/site'
+import { getAllPosts } from '@/lib/mdx'
+
 export default function HomePage() {
+  const hasWriting = getAllPosts().length > 0
 
   return (
-    <div className="space-y-12">
-      <section className="pt-6">
-        <h1 className="text-5xl leading-[1.1] font-normal">Shivansh Bansal</h1>
-        <p className="font-mono text-sm tracking-widest text-[#777777] mt-4 uppercase">
-          Machine Learning Engineer (Applied AI) — San Francisco, CA
-        </p>
-        <p className="font-mono text-sm tracking-widest text-[#aaaaaa] mt-1 uppercase">
-          CS + Bioinformatics, UCLA
-        </p>
-        <p className="text-lg leading-[1.8] mt-8 text-[#555555]">
-          Building intelligent products at the intersection of healthcare and hardware.
-        </p>
-        <div className="flex items-center gap-5 mt-8">
-          {[
-            { label: 'Email', href: 'mailto:shivanshb@ucla.edu' },
-            { label: 'LinkedIn', href: 'https://linkedin.com/in/shivansh~bansal' },
-            { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=shivanshbansal' },
-            { label: 'Twitter', href: 'https://twitter.com/shivanshb2008' },
-            { label: 'GitHub', href: 'https://github.com/shivanshb828' },
-          ].map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[0.65rem] tracking-widest text-[#888888] hover:text-[#111111] transition-colors"
-            >
-              [{link.label}]
-            </a>
-          ))}
-        </div>
-      </section>
+    <div className="min-h-screen pb-24 pt-24">
+      <h1 className="text-4xl font-medium tracking-tight">{site.name}</h1>
 
-      <section>
-        <h2 className="font-mono text-[0.65rem] tracking-widest text-[#666666] mb-8 uppercase">
-          / experience
-        </h2>
-        <div className="relative border-l border-[#e0e0e0] ml-1 space-y-10">
-          {[
-            {
-              company: 'Continuity Technologies',
-              href: 'https://continuity.bio',
-              role: 'Machine Learning Engineer',
-              description: 'Building ML frameworks for biological data.',
-            },
-            {
-              company: 'Flair Labs (YC S22)',
-              href: null,
-              role: 'AI Research Engineer',
-              description: 'Worked on AI Agents to automate lead capture and loan origination.',
-            },
-          ].map((item) => (
-            <div key={item.company} className="relative pl-8">
-              <span className="absolute -left-[5px] top-[6px] w-2.5 h-2.5 rounded-full border-2 border-[#bbbbbb] bg-white" />
-              <p className="font-mono text-[0.7rem] tracking-widest uppercase text-[#888888] mb-1">
-                {item.role}
-              </p>
-              {item.href ? (
+      <p className="mt-10">
+        I&apos;m studying Computer Science with a minor in Bioinformatics at UCLA. I like building where machine
+        learning meets biology, and more and more, hardware.
+      </p>
+      <p className="mt-4">
+        Right now I&apos;m an Associate Analyst at Bruin Ventures.
+      </p>
+      <p className="mt-4">
+        I have <Link href="/experience#experience-graph">experience</Link> across biological ML, applied AI, venture,
+        and education policy. I do <Link href="/research">research</Link> on drug discovery and on whether frontier
+        models can make the judgment calls scientists make.
+      </p>
+      <p className="mt-4">
+        I spend a lot of weekends at hackathons, and some of those <Link href="/projects">projects</Link> have done
+        well.
+        {hasWriting && (
+          <>
+            {' '}
+            I also <Link href="/writing">write</Link>.
+          </>
+        )}
+      </p>
+
+      <AboutDropdown>
+        <p>
+          I grew up in Dublin, California, where I spent most of high school on research and science fairs. At UCLA
+          I&apos;m involved with Bruin AI Safety and CruX.
+        </p>
+        <p className="mt-4">A few things from along the way:</p>
+        <ul className="mt-4 list-disc space-y-3 pl-6">
+          <li>
+            2nd Place in Computational Biology &amp; Bioinformatics at ISEF 2025 (Regeneron / Society for Science), for
+            work on olfactory receptors in cancer
+          </li>
+          <li>USA Computing Olympiad, Gold Division</li>
+          <li>Completed BlueDot Impact&apos;s Technical AI Safety course</li>
+        </ul>
+        <p className="mt-4">
+          Beyond what&apos;s here, I&apos;m drawn to hardware design, nanotechnology, medical engineering, and drug
+          delivery.
+        </p>
+
+        <div className="mt-10 border-t border-dashed border-rule pt-6">
+          <p className="text-[13px] uppercase tracking-wide text-ink-muted">Contact</p>
+          <ul className="mt-4 space-y-3 text-[13px]">
+            {contact.emails.map((e) => (
+              <li key={e}>
+                <a href={`mailto:${e}`} className="!no-underline hover:!underline">
+                  {e}
+                </a>
+              </li>
+            ))}
+            {contact.links.map((l) => (
+              <li key={l.href}>
                 <a
-                  href={item.href}
+                  href={l.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-normal text-[#111111] underline underline-offset-2 decoration-[#cccccc] hover:decoration-[#111111] transition-colors"
+                  className="inline-flex items-center gap-2 !no-underline hover:opacity-70"
                 >
-                  {item.company}
+                  <Icon name={l.icon} />
+                  <span>{l.label}</span>
                 </a>
-              ) : (
-                <p className="text-base font-normal text-[#111111]">{item.company}</p>
-              )}
-              <p className="text-[0.9375rem] leading-[1.7] text-[#555555] mt-1 max-w-md">
-                {item.description}
-              </p>
-            </div>
-          ))}
+              </li>
+            ))}
+          </ul>
         </div>
-      </section>
+      </AboutDropdown>
 
+      <p className="mt-16 text-ink-muted">Last updated {site.lastUpdated}</p>
     </div>
   )
 }
