@@ -11,30 +11,7 @@
   --rule-soft: rgb(26 26 26 / 0.12);
   --edge: rgb(26 26 26 / 0.2);
   --dot: rgb(26 26 26 / 0.12);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --paper: #141413;
-    --surface: #1c1c1b;
-    --ink: #e8e6e1;
-    --ink-muted: #a9a7a1;
-    --rule: #8a8883;
-    --rule-soft: rgb(232 230 225 / 0.12);
-    --edge: rgb(232 230 225 / 0.25);
-    --dot: rgb(232 230 225 / 0.1);
-  }
-}
-
-:root[data-theme='dark'] {
-  --paper: #141413;
-  --surface: #1c1c1b;
-  --ink: #e8e6e1;
-  --ink-muted: #a9a7a1;
-  --rule: #8a8883;
-  --rule-soft: rgb(232 230 225 / 0.12);
-  --edge: rgb(232 230 225 / 0.25);
-  --dot: rgb(232 230 225 / 0.1);
+  color-scheme: light;
 }
 
 @layer base {
