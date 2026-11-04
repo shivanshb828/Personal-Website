@@ -17,7 +17,7 @@ export default function HomePage() {
       </p>
       <p className="mt-4">
         I&apos;m currently focused on two questions: how to get machine learning to do real science, and how to tell
-        when we can trust it.
+        when we can trust it. On the second, I&apos;m looking to join more AI safety research labs.
       </p>
       <p className="mt-4">
         I have experience across <Link href="/experience#building">building</Link>,{' '}

@@ -49,6 +49,13 @@ export const experience: ExperienceNode[] = [
     y: 0.14,
     roles: [
       {
+        org: 'Hypnos',
+        title: 'Smart sleep mask · In progress',
+        dates: 'Ongoing',
+        description:
+          'A wearable mask that blocks light, then wakes you gently with light, vibration and temperature cues instead of an alarm. The first prototype is built: Arduino compute, circadian-tuned LEDs, haptic motors and heating, with a KiCad and SolidWorks redesign under way. Now adding two-channel EEG/EOG sensing on an ESP32 and ADS1292R, so the mask can learn when and how to wake each person.',
+      },
+      {
         org: 'Continuity',
         orgHref: 'https://continuity.bio/',
         title: 'Machine Learning Engineer · Internship',
@@ -138,11 +145,13 @@ export const experience: ExperienceNode[] = [
         org: 'BlueDot Impact',
         title: 'Technical AI Safety course',
         dates: 'Nov 2026',
+        links: [{ label: 'Certificate', href: 'https://bluedot.org/certification?id=recKaIM7RbHNHntXR' }],
       },
       {
         org: 'Bruin AI Safety',
         title: 'Member · UCLA',
         dates: '',
+        description: 'Part of the club’s AI safety reading group.',
       },
     ],
   },
