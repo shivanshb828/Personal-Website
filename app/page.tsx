@@ -20,9 +20,8 @@ export default function HomePage() {
         when we can trust it. On the second, I&apos;m looking to join more AI safety research labs.
       </p>
       <p className="mt-4">
-        I have experience across <Link href="/experience#building">building</Link>,{' '}
-        <Link href="/experience#research">research</Link>, and <Link href="/experience#safety">AI safety</Link>, from
-        biosensor models and voice agents to cancer drug targets and evaluations of frontier models.
+        I have <Link href="/experience">experience</Link> across varied areas, including machine learning for
+        biosensors, applied AI, wearable hardware, computational drug discovery, and evaluating frontier models.
       </p>
       <p className="mt-4">
         Most weekends I&apos;m at a <Link href="/projects">hackathon</Link>.
